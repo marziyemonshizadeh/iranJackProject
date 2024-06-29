@@ -1,0 +1,8 @@
+{
+  "liveServer.settings.CustomBrowser": "chrome",
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  }
+}
