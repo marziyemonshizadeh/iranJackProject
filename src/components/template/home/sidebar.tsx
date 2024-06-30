@@ -66,6 +66,13 @@ const Sidebar = () => {
               !open && " bg-[#F5F5F5]"
             } border-2 border-[#EAEAEA] bg-[#EEECFF] text-[#3E2DE1] rounded-md p-1`}
           >
+            {/* <Image
+              alt="nn"
+              src="/images/addProjectIcon.png"
+              width={10}
+              height={10}
+              className="w-6 h-6"
+            /> */}
             <LuPlusCircle className="w-6 h-6" />
 
             <span className={`${!open && "hidden"} origin-left duration-200`}>
