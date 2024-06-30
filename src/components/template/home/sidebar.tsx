@@ -74,7 +74,6 @@ const Sidebar = () => {
               className="w-6 h-6"
             /> */}
             <LuPlusCircle className="w-6 h-6" />
-
             <span className={`${!open && "hidden"} origin-left duration-200`}>
               پروژه
             </span>

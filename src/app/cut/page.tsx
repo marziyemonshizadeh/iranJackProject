@@ -62,7 +62,7 @@ const Cut = () => {
           </ul>
         </div>
         <div>
-          <div className="inline-flex items-center gap-2 font-semibold bg-[#FEF5DF] text-[#783412] text-xs rounded-lg border-r-2 border-r-[#FDB600] p-1 my-3">
+          <div className="inline-flex items-center gap-2 font-semibold bg-[#FEF5DF] px-2 text-[#783412] text-xs rounded-lg border-r-2 border-r-[#FDB600] p-1 my-3">
             <Image
               alt="x"
               src="/images/Warning.png"
