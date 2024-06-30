@@ -3,9 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { HiOutlineHome } from "react-icons/hi";
 
-interface Props {}
-
-const Cut = (props: Props) => {
+const Cut = () => {
   return (
     <HomePageLayout>
       <div className="col-span-12">
@@ -64,6 +62,26 @@ const Cut = (props: Props) => {
           </ul>
         </div>
         <div>
+          <div className="inline-flex items-center gap-2 font-semibold bg-[#FEF5DF] text-[#783412] text-xs rounded-lg border-r-2 border-r-[#FDB600] p-1 my-3">
+            <Image
+              alt="x"
+              src="/images/Warning.png"
+              width={5}
+              height={5}
+              className="w-4 h-4"
+            />
+            <span>
+              کاربر گرامی در نظر داشته باشید که با فشردن دکمه ارسال به انبار ،
+              دیگر قادر به اضافه کردن اطلاعات به میز برش مذکور نخواهید بود
+            </span>
+            <Image
+              alt="x"
+              src="/images/DeleteWarn.png"
+              width={5}
+              height={5}
+              className="w-4 h-4"
+            />
+          </div>
           <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-6 my-2">
             <input
               type="text"
