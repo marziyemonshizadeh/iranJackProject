@@ -1,5 +1,6 @@
 "use client";
 
+import FormLayout from "@/components/layout/formLayout";
 import Logo from "@/components/module/logo";
 import {
   LogInFormSchemaType,
@@ -24,12 +25,7 @@ export default function LoginForm() {
     reset();
   };
   return (
-    <div
-      className="h-screen w-screen flex justify-center items-center bg-no-repeat bg-[#F5F5F5] bg-center bg-opacity-75"
-      style={{
-        backgroundImage: 'url("/images/pattern.svg")',
-      }}
-    >
+    <FormLayout>
       <form
         className="w-[388px] min-h-[404px] mx-auto p-8 border border-slate-100 bg-center rounded-[12px] shadow-sm shadow-[#E8E8E8] bg-[#FEFEFE]"
         action="#"
@@ -47,7 +43,6 @@ export default function LoginForm() {
                 height={10}
                 className="w-6 h-6"
               />
-              {/* <FiUser className="w-6 h-6" /> */}
             </div>
             <input
               type="text"
@@ -58,7 +53,7 @@ export default function LoginForm() {
             />
           </div>
           {errors.identifier && (
-            <span className="text-indigo-700 font-bold text-xs">
+            <span className="errorMsgStyle">
               {(errors.identifier as any)?.required?.message ||
                 errors?.identifier?.message}
             </span>
@@ -66,7 +61,6 @@ export default function LoginForm() {
 
           <div className="relative">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none text-[#888888]">
-              {/* <CiLock className="w-6 h-6" /> */}
               <Image
                 alt=""
                 src="/images/Lock.svg"
@@ -84,9 +78,7 @@ export default function LoginForm() {
             />
           </div>
           {errors.password && (
-            <span className="text-indigo-700 font-bold text-xs">
-              {errors.password.message}
-            </span>
+            <span className="errorMsgStyle">{errors.password.message}</span>
           )}
           <div className="flex items-center justify-between gap-2 text-sm">
             <div className="flex items-center">
@@ -139,15 +131,11 @@ export default function LoginForm() {
             </div>
           </div>
 
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full text-slate-50 bg-indigo-700 p-3 rounded-md"
-          >
+          <button type="submit" disabled={isSubmitting} className="button">
             ورود
           </button>
         </div>
       </form>
-    </div>
+    </FormLayout>
   );
 }
