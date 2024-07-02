@@ -1,194 +1,93 @@
 import HomePageLayout from "@/components/layout/homePageLayout";
+import CuttingComponent from "@/components/template/cut/cuttingTable/cuttingComponent";
+import Tab from "@/components/template/cut/tab";
+import TableOfSizes from "@/components/template/cut/tableOfSizes/sizeComponent";
+import TheFormToSendToTheWarehouse from "@/components/template/cut/theFormToSendToTheWarehouse";
 import Image from "next/image";
 import Link from "next/link";
-import { HiOutlineHome } from "react-icons/hi";
+import { LuDownload, LuPlusCircle } from "react-icons/lu";
 
 const Cut = () => {
   return (
     <HomePageLayout>
-      <div className="col-span-12">
-        <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
-          <ul className="flex flex-wrap -mb-px">
-            <li className="me-2">
-              <Link
-                href="#"
-                className="inline-flex items-center gap-2 p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500"
-                aria-current="page"
-              >
-                <HiOutlineHome />
-                صفحه اصلی
-              </Link>
-            </li>
-            <li className="me-2">
-              <Link
-                href="#"
-                className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-              >
-                برش
-              </Link>
-            </li>
-            <li className="me-2">
-              <Link
-                href="#"
-                className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-              >
-                سایزبندی
-              </Link>
-            </li>
-            <li className="me-2">
-              <Link
-                href="#"
-                className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-              >
-                کارکنان برش
-              </Link>
-            </li>
-            <li className="me-2">
-              <Link
-                href="#"
-                className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-              >
-                ثبت خرابی
-              </Link>
-            </li>
-            <li className="me-2">
-              <Link
-                href="#"
-                className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-              >
-                اموال
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <div className="inline-flex items-center gap-2 font-semibold bg-[#FEF5DF] px-2 text-[#783412] text-xs rounded-lg border-r-2 border-r-[#FDB600] p-1 my-3">
-            <Image
-              alt="x"
-              src="/images/Warning.png"
-              width={5}
-              height={5}
-              className="w-4 h-4"
-            />
-            <span>
-              کاربر گرامی در نظر داشته باشید که با فشردن دکمه ارسال به انبار ،
-              دیگر قادر به اضافه کردن اطلاعات به میز برش مذکور نخواهید بود
-            </span>
-            <Image
-              alt="x"
-              src="/images/DeleteWarn.png"
-              width={5}
-              height={5}
-              className="w-4 h-4"
-            />
-          </div>
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-6 my-2">
-            <input
-              type="text"
-              id="first_name"
-              className="bg-[#F5F5F5] border border-[#D3D3D3] outline-none text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-              placeholder="عنوان برش"
-              required
-            />
-            <input
-              type="text"
-              id="first_name"
-              className="bg-[#F5F5F5] border border-[#D3D3D3] outline-none text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-              placeholder="کد برش"
-              required
-            />
-            <input
-              type="text"
-              id="first_name"
-              className="bg-[#F5F5F5] border border-[#D3D3D3] outline-none text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-              placeholder="کد پروژه"
-              required
-            />
-            <input
-              type="text"
-              id="first_name"
-              className="bg-[#F5F5F5] border border-[#D3D3D3] outline-none text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-              placeholder="رنگ"
-              required
-            />
-            <input
-              type="text"
-              id="first_name"
-              className="bg-[#F5F5F5] border border-[#D3D3D3] outline-none text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-              placeholder="کد رنگ"
-              required
-            />
-            <input
-              type="text"
-              id="first_name"
-              className="bg-[#F5F5F5] border border-[#D3D3D3] outline-none text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-              placeholder="کد کالیته"
-              required
-            />
-            <input
-              type="text"
-              id="first_name"
-              className="bg-[#F5F5F5] border border-[#D3D3D3] outline-none text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-              placeholder="تعداد قد "
-              required
-            />
-          </div>
-          <div className="flex justify-end">
-            <button
-              type="button"
-              className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-            >
-              ارسال به انبار
-            </button>
-            <button
-              type="button"
-              className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-            >
-              ذخیره
-            </button>
-          </div>
-          <div className="grid grid-cols-6 gap-3">
-            <div className="col-span-3 border border-slate-400 rounded-md p-1">
-              <div className="border-b border-b-slate-400 py-2">میز برش</div>
-              <div className="my-3 border-[1px] border-slate-200">
-                <div className="bg-[#EAEAEA] h-10"></div>
-                <Image
-                  alt="mm"
-                  src="/images/Empty.png"
-                  width={50}
-                  height={50}
-                  className="w-[552px] h-[113px]"
-                />
-                <div className="bg-[#EAEAEA] h-10"></div>
-              </div>
-              <button
-                type="button"
-                className="text-white float-end bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-              >
-                ویرایش
-              </button>
-            </div>
+      <div className="col-span-12 mt-4 ">
+        <Tab />
 
-            <div className="col-span-3 border border-slate-400 rounded-md p-1">
-              <div className="border-b border-b-slate-400 py-2">
-                سایزبندی ها
-              </div>
-              <div className=" my-3 border-[1px] border-slate-200">
-                <div className="bg-[#EAEAEA] h-10"></div>
-                <div>
-                  <Image
-                    alt="mm"
-                    src="/images/Empty.png"
-                    width={50}
-                    height={50}
-                    className="w-[552px] h-[113px]"
-                  />
-                </div>
-                <div className="bg-[#EAEAEA] h-10"></div>
-              </div>
-            </div>
+        <ul className=" mt-5 flex flex-wrap text-sm font-bold text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+          <li className="me-2">
+            <Link
+              href="#"
+              className="inline-flex items-center gap-1  p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+            >
+              <LuPlusCircle className="w-5 h-5" />
+              <span>ثبت برش جدید</span>
+            </Link>
+          </li>
+          <li className="me-2">
+            <Link
+              href="#"
+              className="inline-flex items-center gap-1  p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+            >
+              <Image
+                alt="logo"
+                src="/images/delivery-check-list-pen.svg"
+                width={20}
+                height={20}
+                className="w-5 h-5"
+              />
+              <span>لیست برش</span>
+            </Link>
+          </li>
+          <li className="me-2 border border-b-0 border-gray-200 rounded-md">
+            <Link
+              href="#"
+              aria-current="page"
+              className="inline-flex items-center gap-1 p-4 text-[#3E2DE1] bg-white rounded-t-lg active dark:bg-gray-800 dark:text-blue-500"
+            >
+              <LuPlusCircle className="w-5 h-5" />
+              <span>میز برش</span>
+            </Link>
+          </li>
+
+          <li className="me-2">
+            <Link
+              href="#"
+              className="inline-flex items-center gap-1  p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+            >
+              <LuPlusCircle className="w-5 h-5" />
+              <span>برش اضافه</span>
+            </Link>
+          </li>
+          <li className="me-2">
+            <Link
+              href="#"
+              className="inline-flex items-center gap-1  p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+            >
+              <Image
+                alt="logo"
+                src="/images/delivery-check-list-pen.svg"
+                width={20}
+                height={20}
+                className="w-5 h-5"
+              />
+              <span>لیست برش اضافه</span>
+            </Link>
+          </li>
+        </ul>
+
+        <div className="bg-white p-3  border-2 border-b-0 border-t-0 border-[#EEEEEE]">
+          <TheFormToSendToTheWarehouse />
+          <div className="grid grid-cols-6 gap-3">
+            <CuttingComponent />
+            <TableOfSizes />
           </div>
-          <div className="bg-[#EAEAEA] h-10"></div>
+        </div>
+
+        <div className="bg-[#F5F5F5] border-2 border-[#E3E3E3] h-[56px] flex justify-end items-center">
+          <button className="bg-[#FEFEFE] inline-flex justify-center items-center mx-2 float-end text-[#333333] font-normal text-base py-1 px-2 border-2 border-[#EEEEEE] hover:border-[#3E2DE1] focus:border-[#3E2DE1] hover:text-[#3E2DE1] focus:text-[#3E2DE1] focus:bg-[#EEECFF] rounded">
+            <LuDownload className="w-4 h-4 me-2" />
+            <span>خروجی</span>
+          </button>
         </div>
       </div>
     </HomePageLayout>
