@@ -10,11 +10,9 @@ const HomePageLayout = ({ children }: Props) => {
     <div className="bg-[#F8F9FE] text-black">
       <div className="flex">
         <Sidebar />
-        <section className="h-screen flex-1">
+        <section className="h-full flex-1">
           <NavBar />
-          <main className="p-10">
-            <div className="grid grid-cols-12 gap-2">{children}</div>
-          </main>
+          <main className="px-10 h-screen">{children}</main>
         </section>
       </div>
     </div>
