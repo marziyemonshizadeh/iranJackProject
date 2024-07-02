@@ -5,8 +5,8 @@ interface Props {}
 
 export const InProgressProjects = (props: Props) => {
   return (
-    <div className="col-span-8 border bg-white border-slate-200 p-2 rounded border-r-4 border-r-[#566A7F]">
-      <header className="relative flex justify-between pb-4 border-b-2 border-[#EAEAEA]">
+    <div className="lg:col-span-8 md:col-span-6 col-span-12 border bg-white border-slate-200 rounded border-r-[3px] border-r-[#566A7F] h-[330px] overflow-y-scroll scrollbar-thin scrollbar-thumb-[#E3E3E3] scrollbar-track-transparent lg:overflow-x-hidden md:overflow-x-scroll">
+      <header className="relative flex justify-between items-center p-2 pb-4">
         <Link
           href="#"
           className="flex items-center gap-2 text-[#2B5BB7] font-bold"
@@ -18,132 +18,246 @@ export const InProgressProjects = (props: Props) => {
           className="flex items-center gap-2 text-xs text-[#2B5BB7] font-bold"
         >
           مشاهده بیشتر
-          <IoIosArrowBack />
+          <IoIosArrowBack className="w-3 h-3" />
         </Link>
       </header>
 
-      <div className="relative overflow-x-auto sm:rounded-lg text-xs">
-        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-[#566A7F] uppercase py-8">
-            <tr className=" bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center">
-              <th scope="col">ردیف</th>
-              <th scope="col">کد پروژه</th>
-              <th scope="col">عنوان پروژه</th>
-              <th scope="col">تعداد سفارشات</th>
-              <th scope="col">نام سفارش دهنده</th>
-              <th scope="col">ایستگاه فعلی</th>
-              <th scope="col">ایستگاه بعدی</th>
-              <th scope="col">زمان تقریبی اتمام پروژه</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th
-                scope="row"
-                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                00001
-              </th>
-              <td className="p-1">00001</td>
-              <td className="p-1">پروژه عقیق شمال</td>
-              <td className="p-1">1342</td>
-              <td className="p-1">حسین نیکو</td>
-              <td className="p-1">دوخت</td>
-              <td className="p-1">چیدمان</td>
-              <td className="p-1">1402/دی/12</td>
-            </tr>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th
-                scope="row"
-                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                00002
-              </th>
-              <td className="p-1">00001</td>
-              <td className="p-1">پروژه عقیق شمال</td>
-              <td className="p-1">1342</td>
-              <td className="p-1"> شقایق شریف ...</td>
-              <td className="p-1">نمونه دوزی</td>
-              <td className="p-1">کنترل کیفیت</td>
-              <td className="p-1">1402/دی/12</td>
-            </tr>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th
-                scope="row"
-                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                00002
-              </th>
-              <td className="p-1">00001</td>
-              <td className="p-1">پروژه عقیق خراسان</td>
-              <td className="p-1">1342</td>
-              <td className="p-1"> شقایق شریف ...</td>
-              <td className="p-1">نمونه دوزی</td>
-              <td className="p-1">کنترل کیفیت</td>
-              <td className="p-1">1402/دی/12</td>
-            </tr>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th
-                scope="row"
-                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                00003
-              </th>
-              <td className="p-1">00001</td>
-              <td className="p-1">پروژه عقیق اقلید</td>
-              <td className="p-1">1342</td>
-              <td className="p-1">امیر علی صدیق</td>
-              <td className="p-1">شست و شو</td>
-              <td className="p-1">چیدمان</td>
-              <td className="p-1">1402/دی/12</td>
-            </tr>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th
-                scope="row"
-                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                00004
-              </th>
-              <td className="p-1">00001</td>
-              <td className="p-1">پروژه عقیق بندرعباس</td>
-              <td className="p-1">1342</td>
-              <td className="p-1"> غلامرضا نیکخواه</td>
-              <td className="p-1"> دوخت</td>
-              <td className="p-1">گلدوزی</td>
-              <td className="p-1">1402/دی/12</td>
-            </tr>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th
-                scope="row"
-                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                00005
-              </th>
-              <td className="p-1">00001</td>
-              <td className="p-1">پروژه عقیق بوشهر</td>
-              <td className="p-1">1342</td>
-              <td className="p-1"> جعفر قره گوزلو</td>
-              <td className="p-1"> بسته بندی</td>
-              <td className="p-1">نمونه دوزی</td>
-              <td className="p-1">1402/دی/12</td>
-            </tr>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th
-                scope="row"
-                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                00006
-              </th>
-              <td className="p-1">00001</td>
-              <td className="p-1">پروژه عقیق ارومیه</td>
-              <td className="p-1">1342</td>
-              <td className="p-1">حمید اسکندری</td>
-              <td className="p-1">کنترل کیفیت</td>
-              <td className="p-1">چیدمان</td>
-              <td className="p-1">1402/دی/12</td>
-            </tr>
-          </tbody>
-        </table>
+      <div className="relative overflow-x-auto text-xs">
+        <div className="inline-block min-w-full py-2">
+          <div className="overflow-hidden">
+            <table className="min-w-full border border-neutral-200 text-center text-sm text-[#555555] font-light text-surface dark:border-white/10 dark:text-white">
+              <thead className="border-b border-neutral-200 font-normal dark:border-white/10 text-[#566A7F]">
+                <tr>
+                  <th
+                    scope="col"
+                    className="border-e border-neutral-200 px-3 py-2 dark:border-white/10"
+                  >
+                    ردیف
+                  </th>
+                  <th scope="col" className="px-3 py-2 dark:border-white/10">
+                    کد پروژه
+                  </th>
+                  <th scope="col" className="px-3 py-2 dark:border-white/10">
+                    عنوان پروژه
+                  </th>
+                  <th scope="col" className="px-3 py-2">
+                    تعداد سفارشات
+                  </th>
+                  <th scope="col" className="px-3 py-2">
+                    نام سفارش دهنده
+                  </th>
+                  <th scope="col" className="px-3 py-2">
+                    ایستگاه فعلی
+                  </th>
+                  <th scope="col" className="px-3 py-2">
+                    ایستگاه بعدی
+                  </th>
+                  <th scope="col" className="px-3 py-2">
+                    زمان تقریبی اتمام پروژه
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-neutral-200 dark:border-white/10 font-normal text-sm">
+                  <td className="whitespace-nowrap border-e border-neutral-200 px-3 py-2 dark:border-white/10">
+                    00001
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    00001
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    پروژه عقیق شمال
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    <span className="bg-[#F4FDDD] text-[#417D1A] rounded-2xl px-3 py-1">
+                      1342
+                    </span>
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    حسین نیکو
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    دوخت
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    چیدمان
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    12/دی/1402
+                  </td>
+                </tr>
+                <tr className="border-b border-neutral-200 dark:border-white/10 font-normal text-sm">
+                  <td className="whitespace-nowrap border-e border-neutral-200 px-3 py-2 dark:border-white/10">
+                    00002
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    00001
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    پروژه عقیق خراسان
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    <span className="bg-[#F4FDDD] text-[#417D1A] rounded-2xl px-3 py-1">
+                      1342
+                    </span>
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    شقایق شریف ...
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    نمونه دوزی
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    کنترل کیفیت
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    12/دی/1402
+                  </td>
+                </tr>
+                <tr className="border-b border-neutral-200 dark:border-white/10 font-normal text-sm">
+                  <td className="whitespace-nowrap border-e border-neutral-200 px-3 py-2 dark:border-white/10">
+                    00003
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    00001
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    پروژه عقیق اقلید
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    <span className="bg-[#F4FDDD] text-[#417D1A] rounded-2xl px-3 py-1">
+                      1342
+                    </span>
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    امیرعلی صدیق
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    شست و شو
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    چیدمان
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    12/دی/1402
+                  </td>
+                </tr>
+                <tr className="border-b border-neutral-200 dark:border-white/10 font-normal text-sm">
+                  <td className="whitespace-nowrap border-e border-neutral-200 px-3 py-2 dark:border-white/10">
+                    00004
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    00001
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    پروژه عقیق بندرعباس
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    <span className="bg-[#F4FDDD] text-[#417D1A] rounded-2xl px-3 py-1">
+                      1342
+                    </span>
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    غلامرضا نیکخواه
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    دوخت
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    گلدوزی
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    12/دی/1402
+                  </td>
+                </tr>
+                <tr className="border-b border-neutral-200 dark:border-white/10 font-normal text-sm">
+                  <td className="whitespace-nowrap border-e border-neutral-200 px-3 py-2 dark:border-white/10">
+                    00005
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    00001
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    پروژه عقیق بوشهر
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    <span className="bg-[#F4FDDD] text-[#417D1A] rounded-2xl px-3 py-1">
+                      1342
+                    </span>
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    جعفر قره گوزلو
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    بسته بندی
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    نمونه دوزی
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    12/دی/1402
+                  </td>
+                </tr>
+                <tr className="border-b border-neutral-200 dark:border-white/10 font-normal text-sm">
+                  <td className="whitespace-nowrap border-e border-neutral-200 px-3 py-2 dark:border-white/10">
+                    00006
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    00001
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    پروژه عقیق ارومیه
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    <span className="bg-[#F4FDDD] text-[#417D1A] rounded-2xl px-3 py-1">
+                      1342
+                    </span>
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    حمید اسکندری
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    کنترل کیفیت
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    چیدمان
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    12/دی/1402
+                  </td>
+                </tr>
+                <tr className="border-b border-neutral-200 dark:border-white/10 font-normal text-sm">
+                  <td className="whitespace-nowrap border-e border-neutral-200 px-3 py-2 dark:border-white/10">
+                    00007
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    00001
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    پروژه عقیق شمال
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    <span className="bg-[#F4FDDD] text-[#417D1A] rounded-2xl px-3 py-1">
+                      1342
+                    </span>
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    حسین نیکو
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    دوخت
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    چیدمان
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-2 dark:border-white/10">
+                    12/دی/1402
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   );

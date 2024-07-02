@@ -1,16 +1,18 @@
 import HomePageLayout from "@/components/layout/homePageLayout";
-import PerformanceChart from "@/components/template/home/PerformanceChart";
 import { ThePerformanceOfTheStations } from "@/components/template/home/ThePerformanceOfTheStations";
 import { InProgressProjects } from "@/components/template/home/inProgressProjects";
 import { OrdersList } from "@/components/template/home/ordersList";
+import PerformanceAtAGlance from "@/components/template/home/performanceAtAGlance";
 
 function Test() {
   return (
     <HomePageLayout>
-      <PerformanceChart />
-      <InProgressProjects />
-      <ThePerformanceOfTheStations />
-      <OrdersList />
+      <div className="grid grid-cols-12 gap-6 md:gap-2 py-5">
+        <PerformanceAtAGlance />
+        <InProgressProjects />
+        <OrdersList />
+        <ThePerformanceOfTheStations />
+      </div>
     </HomePageLayout>
   );
 }

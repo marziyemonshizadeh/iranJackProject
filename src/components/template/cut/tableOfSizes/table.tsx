@@ -5,55 +5,55 @@ function SizeTable() {
         <tr>
           <th
             scope="col"
-            className="px-3 py-2 border-e border-[#E3E3E3] dark:border-white/10"
+            className="py-2 border-e border-[#E3E3E3] dark:border-white/10"
           >
             ردیف
           </th>
           <th
             scope="col"
-            className="px-3 py-2 border-e border-[#E3E3E3] dark:border-white/10"
+            className="py-2 border-e border-[#E3E3E3] dark:border-white/10"
           >
             XS
           </th>
           <th
             scope="col"
-            className="px-3 py-2 border-e border-[#E3E3E3] dark:border-white/10"
+            className="py-2 border-e border-[#E3E3E3] dark:border-white/10"
           >
             S
           </th>
           <th
             scope="col"
-            className="px-3 py-2 border-e border-[#E3E3E3] dark:border-white/10"
+            className="py-2 border-e border-[#E3E3E3] dark:border-white/10"
           >
             M
           </th>
           <th
             scope="col"
-            className="px-3 py-2 border-e border-[#E3E3E3] dark:border-white/10"
+            className="py-2 border-e border-[#E3E3E3] dark:border-white/10"
           >
             L
           </th>
           <th
             scope="col"
-            className="px-3 py-2 border-e border-[#E3E3E3] dark:border-white/10"
+            className="py-2 border-e border-[#E3E3E3] dark:border-white/10"
           >
             XL
           </th>
           <th
             scope="col"
-            className="px-3 py-2 border-e border-[#E3E3E3] dark:border-white/10"
+            className="py-2 border-e border-[#E3E3E3] dark:border-white/10"
           >
             2XL
           </th>
           <th
             scope="col"
-            className="px-3 py-2 border-e border-[#E3E3E3] dark:border-white/10"
+            className="py-2 border-e border-[#E3E3E3] dark:border-white/10"
           >
             3XL
           </th>
           <th
             scope="col"
-            className="px-3 py-2 border-e border-[#E3E3E3] dark:border-white/10"
+            className="py-2 border-e border-[#E3E3E3] dark:border-white/10"
           >
             جمع کل
           </th>
@@ -61,7 +61,7 @@ function SizeTable() {
       </thead>
       <tbody className="text-sm font-normal">
         <tr className="odd:bg-white h-9 odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700 border-b border-[#E3E3E3] dark:border-white/10">
-          <td className="px-1 py-[9px] whitespace-nowrap border-e border-[#E3E3E3] dark:border-white/10">
+          <td className=" py-[9px] whitespace-nowrap border-e border-[#E3E3E3] dark:border-white/10">
             0001
           </td>
           <td className="whitespace-nowrap border-e border-[#E3E3E3] dark:border-white/10">

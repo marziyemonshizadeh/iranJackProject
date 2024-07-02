@@ -5,10 +5,12 @@ import {
   SendToTheWarehouseFormSchemaType,
 } from "@/validation/sendToTheWarehouseFormValidation";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import WarningMessage from "./warningMessage";
 
 function TheFormToSendToTheWarehouse() {
+  const [showWarn, showWarnSet] = useState(true);
   const {
     register,
     reset,
@@ -26,7 +28,8 @@ function TheFormToSendToTheWarehouse() {
   console.log("data=", errors);
   return (
     <>
-      <WarningMessage />
+      {showWarn && <WarningMessage />}
+
       <form className=" my-2" action="#" onSubmit={handleSubmit(onSubmit)}>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-6">
           <section>

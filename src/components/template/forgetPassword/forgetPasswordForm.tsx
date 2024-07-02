@@ -31,7 +31,7 @@ export default function ForgetPasswordForm() {
   return (
     <FormLayout>
       <form
-        className="w-[388px] max-h-[404px] mx-auto p-8 border border-slate-100 bg-center rounded-[12px] bg-white"
+        className="w-[388px] max-h-[404px] mx-auto p-8 border border-slate-100 bg-center rounded-[12px] shadow-sm shadow-[#E8E8E8] bg-[#FEFEFE]"
         action="#"
         onSubmit={handleSubmit(onSubmit)}
       >

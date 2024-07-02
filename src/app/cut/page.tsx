@@ -12,8 +12,7 @@ const Cut = () => {
     <HomePageLayout>
       <div className="col-span-12 mt-4 ">
         <Tab />
-
-        <ul className=" mt-5 flex flex-wrap text-sm font-bold text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+        <ul className="mt-5 flex flex-wrap text-sm font-bold text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
           <li className="me-2">
             <Link
               href="#"
@@ -38,7 +37,7 @@ const Cut = () => {
               <span>لیست برش</span>
             </Link>
           </li>
-          <li className="me-2 border border-b-0 border-gray-200 rounded-md">
+          <li className="me-2 border border-b-white border-gray-200 rounded-md">
             <Link
               href="#"
               aria-current="page"
@@ -74,7 +73,6 @@ const Cut = () => {
             </Link>
           </li>
         </ul>
-
         <div className="bg-white p-3  border-2 border-b-0 border-t-0 border-[#EEEEEE]">
           <TheFormToSendToTheWarehouse />
           <div className="flex lg:flex-row md:flex-col gap-3">
@@ -82,8 +80,7 @@ const Cut = () => {
             <TableOfSizes />
           </div>
         </div>
-
-        <div className="bg-[#F5F5F5] border-2 border-[#E3E3E3] h-[56px] flex justify-end items-center">
+        <div className="bg-[#F5F5F5] border-2 mb-56 rounded-b-md border-[#E3E3E3] h-[56px] flex justify-end items-center">
           <button className="bg-[#FEFEFE] inline-flex justify-center items-center mx-2 float-end text-[#333333] font-normal text-base py-1 px-2 border-2 border-[#EEEEEE] hover:border-[#3E2DE1] focus:border-[#3E2DE1] hover:text-[#3E2DE1] focus:text-[#3E2DE1] focus:bg-[#EEECFF] rounded">
             <LuDownload className="w-4 h-4 me-2" />
             <span>خروجی</span>
