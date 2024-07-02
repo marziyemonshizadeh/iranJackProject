@@ -5,7 +5,7 @@ import Table from "./table";
 function CuttingComponent() {
   const isListEmpty = false;
   return (
-    <div className="col-span-3 border-2 border-[#E3E3E3] rounded-md p-3">
+    <div className="border-2 border-[#E3E3E3] rounded-md p-3 w-full">
       <div className="border-b-2 border-[#E3E3E3] py-2 text-sm font-medium">
         میز برش
       </div>

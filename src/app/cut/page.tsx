@@ -77,7 +77,7 @@ const Cut = () => {
 
         <div className="bg-white p-3  border-2 border-b-0 border-t-0 border-[#EEEEEE]">
           <TheFormToSendToTheWarehouse />
-          <div className="grid grid-cols-6 gap-3">
+          <div className="flex lg:flex-row md:flex-col gap-3">
             <CuttingComponent />
             <TableOfSizes />
           </div>
