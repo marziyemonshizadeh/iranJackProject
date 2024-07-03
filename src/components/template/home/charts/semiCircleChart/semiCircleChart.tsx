@@ -6,7 +6,7 @@ import { Doughnut } from "react-chartjs-2";
 Chart.register(ArcElement);
 
 const SemiCircleChart = () => {
-  const data = {
+  const data: any = {
     datasets: [
       {
         data: [23, 20, 23, 25, 9],
@@ -19,6 +19,7 @@ const SemiCircleChart = () => {
         ],
         display: true,
         border: "none",
+        borderRadius: "8",
         cutout: "90%",
       },
     ],
@@ -44,18 +45,18 @@ const SemiCircleChart = () => {
             maintainAspectRatio: true,
             responsive: true,
           }}
-          className="lg:mx-5 md:mx-10 mx-12"
+          style={{ position: "relative", height: "420vh", width: "100%" }}
         />
         <div
           style={{
             position: "absolute",
             top: "60%",
-            right: "13%",
+            right: "15%",
             transform: "translate(-50%, -50%)",
             textAlign: "center",
           }}
         >
-          <span className="text-[#444444]">970</span>
+          <span className="text-[#444444] font-bold">970</span>
           <div className="text-[#888888]"> عملکرد حال حاضر</div>
         </div>
       </div>
