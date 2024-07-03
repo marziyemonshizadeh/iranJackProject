@@ -26,13 +26,13 @@ const Sidebar = () => {
 
   return (
     <section
-      className={`bg-[#FEFEFE] text-[#3E2DE1] duration-300  sticky top-0 z-20 ${
+      className={`bg-[#FEFEFE] text-[#3E2DE1] duration-300  sticky top-0 z-20 overflow-hidden ${
         open ? "w-72" : "w-20"
       }`}
     >
       <div className={`fixed ${open ? "w-72" : "w-20"}`}>
         <div
-          className={`bg-[#F8F9FE] p-1 w-10 h-10 rounded-full absolute cursor-pointer overflow-hidden top-10 ${
+          className={`bg-[#F8F9FE] p-1 w-10 h-10 rounded-full absolute cursor-pointer top-10 ${
             open ? "right-[277px]" : "right-[72px] overflow-y-hidden"
           }`}
           onClick={() => setOpen(!open)}

@@ -6,7 +6,7 @@ import SemiCircleChart from "./charts/semiCircleChart/semiCircleChart";
 
 const PerformanceAtAGlance = () => {
   return (
-    <div className="lg:col-span-4 md:col-span-6 col-span-12 border bg-white border-slate-200 p-2 rounded border-r-[3px] border-r-[#2B5BB7] w-full h-[460px]">
+    <div className="lg:col-span-4 md:col-span-6 col-span-12 border bg-white border-slate-200 p-2 rounded border-r-[3px] border-r-[#2B5BB7] w-full h-[430px]">
       <header className="relative flex justify-between border-b-2 pb-2 border-[#EAEAEA]">
         <Link
           href="#"
