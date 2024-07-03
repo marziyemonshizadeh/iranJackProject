@@ -87,43 +87,6 @@ const Cut = () => {
           </button>
         </div>
       </div>
-
-      <div className="border rounded m-6 pb-6 tab-component bg-white">
-        <ul className="flex border-b tab-buttons">
-          <li className="mr-1">
-            <button
-              data-tab-index="0"
-              className="tab-item bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
-            >
-              Chrome API Notes
-            </button>
-          </li>
-          <li className="mr-1">
-            <button
-              data-tab-index="1"
-              className="tab-item bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
-            >
-              Other
-            </button>
-          </li>
-          <li className="-mb-px mr-1">
-            <button
-              data-tab-index="2"
-              className="tab-item bg-white inline-block py-2 px-4 border-l border-t border-r rounded-t text-blue-700 font-semibold active"
-            >
-              &middot;&nbsp;Misc&nbsp;&middot;
-            </button>
-          </li>
-          <li className="mr-1 cursor-not-allowed">
-            <button
-              data-tab-index="3"
-              className="tab-item bg-white inline-block py-2 px-4 text-gray-400 font-semibold cursor-not-allowed disabled"
-            >
-              Tab 4
-            </button>
-          </li>
-        </ul>
-      </div>
     </HomePageLayout>
   );
 };
