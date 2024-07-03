@@ -1,84 +1,64 @@
 "use client";
 
-import dynamic from "next/dynamic";
-const GaugeComponent = dynamic(() => import("react-gauge-component"), {
-  ssr: false,
-});
-type Props = {};
+import { ArcElement, Chart } from "chart.js";
+import { Doughnut } from "react-chartjs-2";
 
-const SemiCircleChart = (props: Props) => {
+Chart.register(ArcElement);
+
+const SemiCircleChart = () => {
+  const data = {
+    datasets: [
+      {
+        data: [23, 20, 23, 25, 9],
+        backgroundColor: [
+          "#FF4040",
+          "#FF6A6A",
+          "#FDB600",
+          "#5C9B29",
+          "#DDF1FF",
+        ],
+        display: true,
+        border: "none",
+        cutout: "90%",
+      },
+    ],
+  };
   return (
     <>
-      <GaugeComponent
-        type="semicircle"
-        arc={{
-          width: 0.2,
-          padding: 0.005,
-          cornerRadius: 1,
-          subArcs: [
-            {
-              limit: 15,
-              color: "#EA4228",
-              showTick: true,
-              tooltip: {
-                text: "Too low temperature!",
+      <div className="relative">
+        <Doughnut
+          data={data}
+          options={{
+            aspectRatio: 1,
+            plugins: {
+              legend: {
+                display: false,
               },
-              onClick: () => console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"),
-              onMouseMove: () =>
-                console.log("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"),
-              onMouseLeave: () =>
-                console.log("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"),
-            },
-            {
-              limit: 17,
-              color: "#F5CD19",
-              showTick: true,
               tooltip: {
-                text: "Low temperature!",
+                enabled: false,
               },
             },
-            {
-              limit: 28,
-              color: "#5BE12C",
-              showTick: true,
-              tooltip: {
-                text: "OK temperature!",
-              },
-            },
-            {
-              limit: 30,
-              color: "#F5CD19",
-              showTick: true,
-              tooltip: {
-                text: "High temperature!",
-              },
-            },
-            {
-              color: "#EA4228",
-              tooltip: {
-                text: "Too high temperature!",
-              },
-            },
-          ],
-        }}
-        pointer={{
-          color: "#345243",
-          length: 0.8,
-          width: 15,
-          // elastic: true,
-        }}
-        labels={{
-          valueLabel: { formatTextValue: (value) => value + "sszzz" },
-          tickLabels: {
-            type: "outer",
-            // valueConfig: { formatTextValue: value => value + 'ºC', fontSize: 10 },
-            ticks: [{ value: 13 }, { value: 22.5 }, { value: 32 }],
-          },
-        }}
-        value={22.5}
-        minValue={10}
-        maxValue={35}
-      />
+            rotation: -90,
+            circumference: 180,
+            cutout: "60%",
+            maintainAspectRatio: true,
+            responsive: true,
+          }}
+          className="lg:mx-5 md:mx-10 mx-12"
+        />
+        <div
+          style={{
+            position: "absolute",
+            top: "60%",
+            right: "13%",
+            transform: "translate(-50%, -50%)",
+            textAlign: "center",
+          }}
+        >
+          <span className="text-[#444444]">970</span>
+          <div className="text-[#888888]"> عملکرد حال حاضر</div>
+        </div>
+      </div>
     </>
   );
 };

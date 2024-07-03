@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BsArrowDownLeftCircleFill } from "react-icons/bs";
 import { PiArrowCircleUpRightFill } from "react-icons/pi";
 import SemiCircleChart from "./charts/semiCircleChart/semiCircleChart";
 
 const PerformanceAtAGlance = () => {
   return (
-    <div className="lg:col-span-4 md:col-span-6 col-span-12 border bg-white border-slate-200 p-2 rounded border-r-[3px] border-r-[#2B5BB7] w-full h-[330px]">
+    <div className="lg:col-span-4 md:col-span-6 col-span-12 border bg-white border-slate-200 p-2 rounded border-r-[3px] border-r-[#2B5BB7] w-full min-h-[330px]">
       <header className="relative flex justify-between pb-4 border-b-2 border-[#EAEAEA]">
         <Link
           href="#"
@@ -44,7 +45,7 @@ const PerformanceAtAGlance = () => {
       </header>
       <div className="py-4">
         <SemiCircleChart />
-        <div className="flex justify-center items-end gap-2 mt-7">
+        <div className="flex justify-center items-end gap-2 ">
           <div className="inline-flex items-center p-1 bg-[#F5F5F5] rounded-lg">
             <PiArrowCircleUpRightFill className="text-[#5C9B29] w-3 h-3" />
             <span className="text-[#566A7F]" style={{ fontSize: "10px" }}>
@@ -58,13 +59,13 @@ const PerformanceAtAGlance = () => {
             </span>
           </div>
           <div className="inline-flex items-center p-1 bg-[#F5F5F5] rounded-lg">
-            <PiArrowCircleUpRightFill className="text-[#FF6A6A] w-3 h-3" />
+            <BsArrowDownLeftCircleFill className="text-[#FF6A6A] w-3 h-3" />
             <span className="text-[#566A7F]" style={{ fontSize: "10px" }}>
               عملکرد ضعیف
             </span>
           </div>
           <div className="inline-flex items-center p-1 bg-[#F5F5F5] rounded-lg">
-            <PiArrowCircleUpRightFill className="text-[#FF4040] w-3 h-3" />
+            <BsArrowDownLeftCircleFill className="text-[#FF4040] w-3 h-3" />
             <span className="text-[#566A7F]" style={{ fontSize: "10px" }}>
               عملکرد ضعیف
             </span>

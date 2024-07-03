@@ -30,7 +30,7 @@ const Sidebar = () => {
         open ? "w-72" : "w-20"
       }`}
     >
-      <div className={`fixed ${open ? "w-72" : "w-20"}`}>
+      <div className={`fixed ${open ? "lg:w-72 max-w-52" : "w-20"}`}>
         <div
           className={`bg-[#F8F9FE] p-1 w-10 h-10 rounded-full absolute cursor-pointer overflow-hidden top-10 ${
             open ? "right-[277px]" : "right-[72px] overflow-y-hidden"

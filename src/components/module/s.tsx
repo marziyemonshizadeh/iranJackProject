@@ -18,7 +18,7 @@ import { SiTicktick } from "react-icons/si";
 import { TbLayoutGridRemove, TbNeedleThread } from "react-icons/tb";
 import { VscServerProcess } from "react-icons/vsc";
 
-const Sidebar = () => {
+const FakeSidebar = () => {
   // const path = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -261,4 +261,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default FakeSidebar;

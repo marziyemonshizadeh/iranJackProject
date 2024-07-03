@@ -13,6 +13,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      // fontFamily: {
+      //   normal: ["normal", "sans-serif"],
+      // black: ["black", "IRANSans"],
+      // bold: ["bold", "IRANSans"],
+      // light: ["light", "IRANSans"],
+      // medium: ["medium", "IRANSans"],
+      // ultraLight: ["ultraLight", "IRANSans"],
+      // },
     },
   },
   plugins: [require("tailwind-scrollbar")],

@@ -1,5 +1,5 @@
-import { NavBar } from "../template/home/navBar";
-import Sidebar from "../template/home/sidebar";
+import Sidebar from "../module/sidebar";
+import NavBar from "../template/home/navBar";
 
 interface Props {
   children: React.ReactNode;

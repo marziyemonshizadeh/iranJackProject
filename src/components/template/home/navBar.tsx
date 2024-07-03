@@ -2,9 +2,9 @@ import Image from "next/image";
 import { FaUserCircle } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 
-export const NavBar = () => {
+const NavBar = () => {
   return (
-    <nav className="flex justify-end items-center lg:gap-[121px] md:gap-2 gap-1 p-3 bg-[#FEFEFE] rounded-bl-3xl shadow-sm h-[64px]">
+    <nav className="flex sticky top-0 z-10 justify-end items-center lg:gap-[121px] md:gap-2 gap-1 p-3 bg-[#FEFEFE] rounded-bl-3xl shadow-sm h-[64px]">
       {/* searching */}
       <div className="pt-2 relative text-gray-600 md:block hidden">
         <input
@@ -69,3 +69,4 @@ export const NavBar = () => {
     </nav>
   );
 };
+export default NavBar;

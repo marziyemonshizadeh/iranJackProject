@@ -2,6 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @font-face {
+  font-family: "normal";
+  font-style: regular;
+  font-weight: 400;
+  src: url("/fonts/IRANSans(FaNum).ttf") format("truetype");
+}
+@font-face {
+  font-family: "black";
+  font-style: regular;
+  font-weight: 400;
+  src: url("/fonts/IRANSans(FaNum)_Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bold";
+  font-style: regular;
+  font-weight: 400;
+  src: url("/fonts/IRANSans(FaNum).ttf") format("truetype");
+}
+@font-face {
+  font-family: "light";
+  font-style: regular;
+  font-weight: 400;
+  src: url("/fonts/IRANSans(FaNum).ttf") format("truetype");
+}
+@font-face {
+  font-family: "medium";
+  font-style: regular;
+  font-weight: 400;
+  src: url("/fonts/IRANSans(FaNum).ttf") format("truetype");
+}
+@font-face {
+  font-family: "ultraLight";
+  font-style: regular;
+  font-weight: 400;
+  src: url("/fonts/IRANSans(FaNum).ttf") format("truetype");
+} */
+
 @layer utilities {
   .button {
     @apply w-full h-14 text-slate-50 bg-[#3E2DE1] p-3 rounded-xl font-bold;
@@ -12,4 +49,7 @@
 }
 .apexcharts-xaxis-label {
   margin-top: 10px;
+}
+.chartBox {
+  width: 200px;
 }
