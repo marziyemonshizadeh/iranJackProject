@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 function ColumnChart() {
-  var options = {
+  var options: any = {
     series: [
       {
         name: "عملکرد دوخت",
@@ -23,6 +23,9 @@ function ColumnChart() {
       },
     },
     xaxis: {
+      lines: {
+        show: false,
+      },
       labels: {
         rotate: -30,
         show: true,
@@ -39,15 +42,16 @@ function ColumnChart() {
         "شست وشو",
         "بسته بندی",
       ],
-      tickPlacement: "on",
+    },
+    yaxis: {
+      lines: {
+        show: true,
+      },
     },
     grid: {
-      row: {
-        colors: ["#fff", "#f2f2f2"],
-      },
-      padding: {
-        bottom: 20,
-      },
+      border: 1,
+      borderColor: "#EAEAEA",
+      strokArray: 1,
     },
     stroke: {
       width: 0,
