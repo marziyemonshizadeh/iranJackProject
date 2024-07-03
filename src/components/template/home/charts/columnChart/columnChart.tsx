@@ -12,12 +12,22 @@ function ColumnChart() {
       },
     ],
     chart: {
-      height: 350,
+      stacked: false,
+      height: 450,
       id: "bar",
+      toolbar: {
+        show: false,
+      },
+      sparkline: {
+        enabled: false,
+      },
     },
     xaxis: {
       labels: {
-        rotate: -40,
+        rotate: -30,
+        show: true,
+        offsetX: -10,
+        offsetY: 25,
       },
       categories: [
         "چیدمان",
@@ -35,6 +45,9 @@ function ColumnChart() {
       row: {
         colors: ["#fff", "#f2f2f2"],
       },
+      padding: {
+        bottom: 20,
+      },
     },
     stroke: {
       width: 0,
@@ -44,11 +57,21 @@ function ColumnChart() {
     },
     plotOptions: {
       bar: {
-        borderRadius: 10,
-        columnWidth: "50%",
+        borderRadius: 5,
+        columnWidth: "30%",
       },
     },
+    axisTicks: {
+      show: false,
+    },
+
     colors: ["#80BCFF"],
+    responsive: [
+      {
+        breakpoint: undefined,
+        options: {},
+      },
+    ],
   };
   return (
     <>
@@ -57,7 +80,8 @@ function ColumnChart() {
         options={options}
         series={options.series}
         height={280}
-        width={460}
+        width={350}
+        style={{ paddingBottom: "3px" }}
       />
     </>
   );

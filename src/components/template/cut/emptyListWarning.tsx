@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function EmptyListWarning() {
   return (
-    <div className=" border-2 border-[#E3E3E3] mx-[2px] select-none">
+    <div className=" border-2 border-[#E3E3E3] select-none">
       <div className="bg-[#F5F5F5] border-b-2 border-[#E3E3E3] h-9"></div>
       <div className="flex flex-col justify-center items-center gap-4 p-4 h-[112px]">
         <Image

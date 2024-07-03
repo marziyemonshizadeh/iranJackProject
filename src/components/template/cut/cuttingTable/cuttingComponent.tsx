@@ -11,7 +11,7 @@ function CuttingComponent() {
       </div>
 
       <div className="h-[220px] overflow-y-scroll scrollbar-thin scrollbar-thumb-[#E3E3E3] scrollbar-track-transparent">
-        <div className="overflow-hidden my-3 m-[1px]">
+        <div className="overflow-hidden my-3 ">
           {isListEmpty ? <EmptyListWarning /> : <Table />}
         </div>
       </div>

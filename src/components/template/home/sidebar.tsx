@@ -46,7 +46,7 @@ const Sidebar = () => {
 
         <ul
           className={`flex flex-col justify-between ${
-            open ? "gap-[10px]" : "gap-[6px]"
+            open ? "lg:gap-[16px] md:gap-[6px]" : "lg:gap-[12px] md:gap-[6px]"
           }`}
         >
           <li className="flex justify-start items-center gap-2 m-2 ms-4 py-2">
@@ -58,14 +58,12 @@ const Sidebar = () => {
               className="w-[30px] h-[30.23px]"
             />
             <p className={`font-semibold text-xl ${!open && "hidden"}`}>
-              اپتی گارمنت
+              اُپتی گارمِنت
             </p>
           </li>
 
           <li
-            className={`${
-              router == "/home" && "border-e-2 border-[#3E2DE1] px-2"
-            } `}
+            className={`${router == "/home" && "border-e-2 border-[#3E2DE1]"} `}
           >
             <Link
               href="/home"
@@ -87,7 +85,7 @@ const Sidebar = () => {
 
           <li
             className={`${
-              router == "/nemouneduzi" && "border-e-2 border-[#3E2DE1] px-2"
+              router == "/nemouneduzi" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link
@@ -110,8 +108,7 @@ const Sidebar = () => {
           </li>
           <li
             className={`${
-              router == "/barnamerizitolid" &&
-              "border-e-2 border-[#3E2DE1] px-2"
+              router == "/barnamerizitolid" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link
@@ -135,7 +132,7 @@ const Sidebar = () => {
 
           <li
             className={`${
-              router == "/chideman" && "border-e-2 border-[#3E2DE1] px-2"
+              router == "/chideman" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link
@@ -158,9 +155,7 @@ const Sidebar = () => {
           </li>
 
           <li
-            className={`${
-              router == "/cut" && "border-e-2 border-[#3E2DE1] px-2"
-            } `}
+            className={`${router == "/cut" && "border-e-2 border-[#3E2DE1]"} `}
           >
             <Link
               href="/cut"
@@ -183,7 +178,7 @@ const Sidebar = () => {
 
           <li
             className={`${
-              router == "/anbartolid" && "border-e-2 border-[#3E2DE1] px-2"
+              router == "/anbartolid" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link
@@ -206,9 +201,7 @@ const Sidebar = () => {
           </li>
 
           <li
-            className={`${
-              router == "/chap" && "border-e-2 border-[#3E2DE1] px-2"
-            } `}
+            className={`${router == "/chap" && "border-e-2 border-[#3E2DE1]"} `}
           >
             <Link
               href="/chap"
@@ -231,7 +224,7 @@ const Sidebar = () => {
 
           <li
             className={`${
-              router == "/golduzi" && "border-e-2 border-[#3E2DE1] px-2"
+              router == "/golduzi" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link
@@ -255,7 +248,7 @@ const Sidebar = () => {
 
           <li
             className={`${
-              router == "/dukht" && "border-e-2 border-[#3E2DE1] px-2"
+              router == "/dukht" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link
@@ -279,7 +272,7 @@ const Sidebar = () => {
 
           <li
             className={`${
-              router == "/kontrolkeyfiat" && "border-e-2 border-[#3E2DE1] px-2"
+              router == "/kontrolkeyfiat" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link
@@ -303,7 +296,7 @@ const Sidebar = () => {
 
           <li
             className={`${
-              router == "/shostosho" && "border-e-2 border-[#3E2DE1] px-2"
+              router == "/shostosho" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link
@@ -327,7 +320,7 @@ const Sidebar = () => {
 
           <li
             className={`${
-              router == "/bastebandi" && "border-e-2 border-[#3E2DE1] px-2"
+              router == "/bastebandi" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link
@@ -351,7 +344,7 @@ const Sidebar = () => {
 
           <li
             className={`${
-              router == "/anbarmahsul" && "border-e-2 border-[#3E2DE1] px-2"
+              router == "/anbarmahsul" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link
@@ -375,7 +368,7 @@ const Sidebar = () => {
 
           <li
             className={`${
-              router == "/manabensani" && "border-e-2 border-[#3E2DE1] px-2"
+              router == "/manabensani" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link
@@ -399,7 +392,7 @@ const Sidebar = () => {
 
           <li
             className={`${
-              router == "/sabtamalkard" && "border-e-2 border-[#3E2DE1] px-2"
+              router == "/sabtamalkard" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link
@@ -423,7 +416,7 @@ const Sidebar = () => {
 
           <li
             className={`${
-              router == "/farayandSazi" && "border-e-2 border-[#3E2DE1] px-2"
+              router == "/farayandSazi" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link
@@ -447,7 +440,7 @@ const Sidebar = () => {
 
           <li
             className={`${
-              router == "/manitoring" && "border-e-2 border-[#3E2DE1] px-2"
+              router == "/manitoring" && "border-e-2 border-[#3E2DE1]"
             } `}
           >
             <Link

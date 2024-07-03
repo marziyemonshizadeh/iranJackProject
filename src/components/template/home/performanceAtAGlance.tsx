@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PiArrowCircleUpRightFill } from "react-icons/pi";
 import SemiCircleChart from "./charts/semiCircleChart/semiCircleChart";
 
 const PerformanceAtAGlance = () => {
@@ -34,14 +35,42 @@ const PerformanceAtAGlance = () => {
             aria-hidden="true"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
               clipRule="evenodd"
             />
           </svg>
         </button>
       </header>
-      <SemiCircleChart />
+      <div className="py-4">
+        <SemiCircleChart />
+        <div className="flex justify-center items-end gap-2 mt-7">
+          <div className="inline-flex items-center p-1 bg-[#F5F5F5] rounded-lg">
+            <PiArrowCircleUpRightFill className="text-[#5C9B29] w-3 h-3" />
+            <span className="text-[#566A7F]" style={{ fontSize: "10px" }}>
+              عملکرد عالی
+            </span>
+          </div>
+          <div className="inline-flex items-center p-1 bg-[#F5F5F5] rounded-lg">
+            <PiArrowCircleUpRightFill className="text-[#FDB600] w-3 h-3" />
+            <span className="text-[#566A7F]" style={{ fontSize: "10px" }}>
+              عملکرد متوسط
+            </span>
+          </div>
+          <div className="inline-flex items-center p-1 bg-[#F5F5F5] rounded-lg">
+            <PiArrowCircleUpRightFill className="text-[#FF6A6A] w-3 h-3" />
+            <span className="text-[#566A7F]" style={{ fontSize: "10px" }}>
+              عملکرد ضعیف
+            </span>
+          </div>
+          <div className="inline-flex items-center p-1 bg-[#F5F5F5] rounded-lg">
+            <PiArrowCircleUpRightFill className="text-[#FF4040] w-3 h-3" />
+            <span className="text-[#566A7F]" style={{ fontSize: "10px" }}>
+              عملکرد ضعیف
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

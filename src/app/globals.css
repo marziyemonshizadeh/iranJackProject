@@ -10,3 +10,6 @@
     @apply text-indigo-700 font-bold text-xs;
   }
 }
+.apexcharts-xaxis-label {
+  margin-top: 10px;
+}

@@ -12,7 +12,7 @@ const HomePageLayout = ({ children }: Props) => {
         <Sidebar />
         <section className="h-full flex-1">
           <NavBar />
-          <main className="px-10">{children}</main>
+          <main className="px-6 pb-36">{children}</main>
         </section>
       </div>
     </div>

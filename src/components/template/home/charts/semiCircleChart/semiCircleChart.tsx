@@ -1,7 +1,6 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import Image from "next/image";
 const GaugeComponent = dynamic(() => import("react-gauge-component"), {
   ssr: false,
 });
@@ -9,7 +8,7 @@ type Props = {};
 
 const SemiCircleChart = (props: Props) => {
   return (
-    <div>
+    <>
       <GaugeComponent
         type="semicircle"
         arc={{
@@ -80,19 +79,7 @@ const SemiCircleChart = (props: Props) => {
         minValue={10}
         maxValue={35}
       />
-      <div>
-        <div className=" flex">
-          <span>عملکرد عالی</span>
-          <Image
-            alt="heroIcon"
-            src="/images/Group.jpg"
-            width={72}
-            height={72}
-            className="w-2 h-2"
-          />
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 

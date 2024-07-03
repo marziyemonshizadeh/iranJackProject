@@ -26,33 +26,33 @@ export const InProgressProjects = (props: Props) => {
         <div className="inline-block min-w-full py-2">
           <div className="overflow-hidden">
             <table className="min-w-full border border-neutral-200 text-center text-sm text-[#555555] font-light text-surface dark:border-white/10 dark:text-white">
-              <thead className="border-b border-neutral-200 font-normal dark:border-white/10 text-[#566A7F]">
+              <thead className="border-b border-neutral-200 font-normal text-xs dark:border-white/10 text-[#566A7F]">
                 <tr>
                   <th
                     scope="col"
-                    className="border-e border-neutral-200 px-3 py-2 dark:border-white/10"
+                    className="border-e border-neutral-200 px-3 py-1 dark:border-white/10"
                   >
                     ردیف
                   </th>
-                  <th scope="col" className="px-3 py-2 dark:border-white/10">
+                  <th scope="col" className="px-3 py-1 dark:border-white/10">
                     کد پروژه
                   </th>
-                  <th scope="col" className="px-3 py-2 dark:border-white/10">
+                  <th scope="col" className="px-3 py-1 dark:border-white/10">
                     عنوان پروژه
                   </th>
-                  <th scope="col" className="px-3 py-2">
+                  <th scope="col" className="px-3 py-1">
                     تعداد سفارشات
                   </th>
-                  <th scope="col" className="px-3 py-2">
+                  <th scope="col" className="px-3 py-1">
                     نام سفارش دهنده
                   </th>
-                  <th scope="col" className="px-3 py-2">
+                  <th scope="col" className="px-3 py-1">
                     ایستگاه فعلی
                   </th>
-                  <th scope="col" className="px-3 py-2">
+                  <th scope="col" className="px-3 py-1">
                     ایستگاه بعدی
                   </th>
-                  <th scope="col" className="px-3 py-2">
+                  <th scope="col" className="px-3 py-1">
                     زمان تقریبی اتمام پروژه
                   </th>
                 </tr>

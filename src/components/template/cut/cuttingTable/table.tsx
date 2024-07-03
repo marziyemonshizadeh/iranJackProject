@@ -6,25 +6,25 @@ function CuttingTable() {
           <tr>
             <th
               scope="col"
-              className="border-e border-[#E3E3E3] px-6 py-[9px] dark:border-white/10"
+              className="border-e border-[#E3E3E3] px-3 py-[9px] dark:border-white/10"
             >
               ردیف
             </th>
-            <th scope="col" className="px-6 py-[9px] dark:border-white/10">
+            <th scope="col" className="px-3 py-[9px] dark:border-white/10">
               رنگ
             </th>
-            <th scope="col" className="px-6 py-[9px] dark:border-white/10">
+            <th scope="col" className="px-3 py-[9px] dark:border-white/10">
               کد رنگ
             </th>
             <th
               scope="col"
-              className="border-e border-[#E3E3E3] px-6 py-[9px] dark:border-white/10"
+              className="border-e border-[#E3E3E3] px-3 py-[9px] dark:border-white/10"
             >
               کد کالیته
             </th>
             <th
               scope="col"
-              className="border-e border-[#E3E3E3] px-6 py-[9px] dark:border-white/10"
+              className="border-e border-[#E3E3E3] px-3 py-[9px] dark:border-white/10"
             >
               تعداد قد
             </th>
@@ -32,49 +32,49 @@ function CuttingTable() {
         </thead>
         <tbody className="text-sm font-normal">
           <tr className="odd:bg-white h-9 odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700 border-b border-[#E3E3E3] dark:border-white/10">
-            <td className="whitespace-nowrap border-e border-[#E3E3E3] px-6 py-[9px] dark:border-white/10">
+            <td className="whitespace-nowrap border-e border-[#E3E3E3] px-3 py-[9px] dark:border-white/10">
               00001
             </td>
-            <td className="whitespace-nowrap px-6 py-[9px] dark:border-white/10">
+            <td className="whitespace-nowrap px-3 py-[9px] dark:border-white/10">
               سبز سرخ آبی
             </td>
-            <td className="whitespace-nowrap px-6 py-[9px] dark:border-white/10">
+            <td className="whitespace-nowrap px-3 py-[9px] dark:border-white/10">
               00006
             </td>
-            <td className="whitespace-nowrap border-e border-[#E3E3E3] px-6 py-[9px] dark:border-white/10">
+            <td className="whitespace-nowrap border-e border-[#E3E3E3] px-3 py-[9px] dark:border-white/10">
               000001
             </td>
-            <td className="whitespace-nowrap px-6 py-[9px]">1</td>
+            <td className="whitespace-nowrap px-3 py-[9px]">1</td>
           </tr>
           <tr className="odd:bg-white h-9 odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700 border-b border-[#E3E3E3] dark:border-white/10">
-            <td className="whitespace-nowrap border-e border-[#E3E3E3] px-6 py-[9px] dark:border-white/10">
+            <td className="whitespace-nowrap border-e border-[#E3E3E3] px-3 py-[9px] dark:border-white/10">
               00002
             </td>
-            <td className="whitespace-nowrap px-6 py-[9px] dark:border-white/10">
+            <td className="whitespace-nowrap px-3 py-[9px] dark:border-white/10">
               مشکی
             </td>
-            <td className="whitespace-nowrap px-6 py-[9px] dark:border-white/10">
+            <td className="whitespace-nowrap px-3 py-[9px] dark:border-white/10">
               00006
             </td>
-            <td className="whitespace-nowrap border-e border-[#E3E3E3] px-6 py-[9px] dark:border-white/10">
+            <td className="whitespace-nowrap border-e border-[#E3E3E3] px-3 py-[9px] dark:border-white/10">
               000001
             </td>
-            <td className="whitespace-nowrap px-6 py-[9px]">1</td>
+            <td className="whitespace-nowrap px-3 py-[9px]">1</td>
           </tr>
           <tr className="odd:bg-white h-9 odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700 border-b border-[#E3E3E3] dark:border-white/10">
-            <td className="whitespace-nowrap border-e border-[#E3E3E3] px-6 py-[9px] dark:border-white/10">
+            <td className="whitespace-nowrap border-e border-[#E3E3E3] px-3 py-[9px] dark:border-white/10">
               00003
             </td>
-            <td className="whitespace-nowrap px-6 py-[9px] dark:border-white/10">
+            <td className="whitespace-nowrap px-3 py-[9px] dark:border-white/10">
               آبی
             </td>
-            <td className="whitespace-nowrap px-6 py-[9px] dark:border-white/10">
+            <td className="whitespace-nowrap px-3 py-[9px] dark:border-white/10">
               00006
             </td>
-            <td className="whitespace-nowrap border-e border-[#E3E3E3] px-6 py-[9px] dark:border-white/10">
+            <td className="whitespace-nowrap border-e border-[#E3E3E3] px-3 py-[9px] dark:border-white/10">
               000001
             </td>
-            <td className="whitespace-nowrap px-6 py-[9px]">1</td>
+            <td className="whitespace-nowrap px-3 py-[9px]">1</td>
           </tr>
         </tbody>
       </table>
