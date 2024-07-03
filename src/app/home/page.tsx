@@ -7,7 +7,7 @@ import PerformanceAtAGlance from "@/components/template/home/performanceAtAGlanc
 function Test() {
   return (
     <HomePageLayout>
-      <div className="grid grid-cols-12 lg:gap-6 gap-6 md:gap-2 py-5">
+      <div className="grid grid-cols-12 lg:gap-5 gap-6 md:gap-2 py-5">
         <PerformanceAtAGlance />
         <InProgressProjects />
         <OrdersList />

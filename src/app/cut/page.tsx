@@ -12,7 +12,7 @@ const Cut = () => {
     <HomePageLayout>
       <div className="col-span-12 mt-4 ">
         <Tab />
-        <ul className="mt-5 flex flex-wrap text-sm font-bold text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+        <ul className="mt-5 flex flex-wrap tab-component text-sm font-bold text-center text-gray-500  dark:border-gray-700 dark:text-gray-400">
           <li className="me-2">
             <Link
               href="#"
@@ -47,7 +47,6 @@ const Cut = () => {
               <span>میز برش</span>
             </Link>
           </li>
-
           <li className="me-2">
             <Link
               href="#"
@@ -73,6 +72,7 @@ const Cut = () => {
             </Link>
           </li>
         </ul>
+
         <div className="bg-white p-3  border-2 border-b-0 border-t-0 border-[#EEEEEE]">
           <TheFormToSendToTheWarehouse />
           <div className="flex lg:flex-row md:flex-col gap-3">
@@ -86,6 +86,43 @@ const Cut = () => {
             <span>خروجی</span>
           </button>
         </div>
+      </div>
+
+      <div className="border rounded m-6 pb-6 tab-component bg-white">
+        <ul className="flex border-b tab-buttons">
+          <li className="mr-1">
+            <button
+              data-tab-index="0"
+              className="tab-item bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
+            >
+              Chrome API Notes
+            </button>
+          </li>
+          <li className="mr-1">
+            <button
+              data-tab-index="1"
+              className="tab-item bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
+            >
+              Other
+            </button>
+          </li>
+          <li className="-mb-px mr-1">
+            <button
+              data-tab-index="2"
+              className="tab-item bg-white inline-block py-2 px-4 border-l border-t border-r rounded-t text-blue-700 font-semibold active"
+            >
+              &middot;&nbsp;Misc&nbsp;&middot;
+            </button>
+          </li>
+          <li className="mr-1 cursor-not-allowed">
+            <button
+              data-tab-index="3"
+              className="tab-item bg-white inline-block py-2 px-4 text-gray-400 font-semibold cursor-not-allowed disabled"
+            >
+              Tab 4
+            </button>
+          </li>
+        </ul>
       </div>
     </HomePageLayout>
   );

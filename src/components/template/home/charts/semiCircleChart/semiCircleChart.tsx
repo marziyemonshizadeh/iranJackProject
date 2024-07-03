@@ -27,6 +27,13 @@ const SemiCircleChart = () => {
   return (
     <>
       <div className="relative">
+        {/* <Image
+          alt="logo"
+          src="/images/degree.png"
+          width={80}
+          height={100}
+          className="absolute w-full h-[50%] top-12"
+        /> */}
         <Doughnut
           data={data}
           options={{
@@ -42,10 +49,17 @@ const SemiCircleChart = () => {
             rotation: -90,
             circumference: 180,
             cutout: "60%",
+            // onResize
             maintainAspectRatio: true,
             responsive: true,
           }}
-          style={{ position: "relative", height: "420vh", width: "100%" }}
+          style={{
+            position: "relative",
+            height: "420vh",
+            width: "90%",
+            top: "50%",
+            margin: "10px",
+          }}
         />
         <div
           style={{
