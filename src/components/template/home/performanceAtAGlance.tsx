@@ -43,10 +43,10 @@ const PerformanceAtAGlance = () => {
           </svg>
         </button>
       </header>
-      <div>
+      <>
         <SemiCircleChart />
         <div className="flex justify-center items-end gap-2 ">
-          <div className="inline-flex items-center p-1 bg-[#F5F5F5] rounded-lg">
+          <div className="inline-flex items-center gap-1 p-1 bg-[#F5F5F5] rounded-lg">
             <PiArrowCircleUpRightFill className="text-[#5C9B29] w-3 h-3" />
             <span className="text-[#566A7F]" style={{ fontSize: "10px" }}>
               عملکرد عالی
@@ -71,7 +71,7 @@ const PerformanceAtAGlance = () => {
             </span>
           </div>
         </div>
-      </div>
+      </>
     </div>
   );
 };

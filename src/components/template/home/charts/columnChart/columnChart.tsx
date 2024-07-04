@@ -24,7 +24,7 @@ function ColumnChart() {
     },
     xaxis: {
       lines: {
-        show: false,
+        show: true,
       },
       labels: {
         rotate: -30,
@@ -63,7 +63,10 @@ function ColumnChart() {
       bar: {
         borderRadius: 5,
         columnWidth: "30%",
+        barHeight: 80,
       },
+      distributed: true,
+      isFunnel: true,
     },
     axisTicks: {
       show: false,

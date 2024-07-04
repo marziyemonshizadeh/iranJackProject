@@ -76,14 +76,19 @@ function CuttingTable() {
             </td>
             <td className="whitespace-nowrap px-3 py-[9px]">1</td>
           </tr>
+          <tr className="bg-[#F5F5F5] border-2 border-t-0 border-[#E3E3E3] border-b dark:border-white/10">
+            <td className="whitespace-nowrap px-3 py-[9px] dark:border-white/10"></td>
+            <td className="whitespace-nowrap px-3 py-[9px] text-[#2B5BB7] text-base font-medium dark:border-white/10">
+              جمع کل
+            </td>
+            <td className="whitespace-nowrap px-3 py-[9px] dark:border-white/10"></td>
+            <td className="whitespace-nowrap border-e border-[#E3E3E3] px-3 py-[9px] dark:border-white/10"></td>
+            <td className="whitespace-nowrap px-3 text-base font-medium py-[9px]">
+              4
+            </td>
+          </tr>
         </tbody>
       </table>
-      <div className="bg-[#F5F5F5] border-2 border-t-0 border-[#E3E3E3] flex items-center">
-        <span className="min-w-[399px] text-[#2B5BB7] text-base font-medium border-e-2 border-[#E3E3E3] flex justify-center  py-2">
-          جمع کل
-        </span>
-        <span className="mx-auto font-medium">4</span>
-      </div>
     </>
   );
 }

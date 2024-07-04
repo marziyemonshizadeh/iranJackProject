@@ -65,7 +65,7 @@ const SemiCircleChart = () => {
           style={{
             position: "absolute",
             top: "60%",
-            right: "15%",
+            right: "18%",
             transform: "translate(-50%, -50%)",
             textAlign: "center",
           }}

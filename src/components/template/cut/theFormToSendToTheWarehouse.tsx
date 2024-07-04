@@ -30,14 +30,14 @@ function TheFormToSendToTheWarehouse() {
     <>
       {showWarn && <WarningMessage />}
 
-      <form className=" my-2" action="#" onSubmit={handleSubmit(onSubmit)}>
+      <form className="my-2" action="#" onSubmit={handleSubmit(onSubmit)}>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-6">
           <section>
             <div className="relative border border-[#D3D3D3] rounded-lg">
               <input
                 type="text"
                 id="cutTitle"
-                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg outline-none appearance-none focus:ring-1 focus:border-[#3E2DE1] peer"
+                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg outline-none appearance-none focus:ring-1 focus:border-[#3E2DE1] selection:border-[#3E2DE1] peer"
                 placeholder=" "
                 {...register("cutTitle", { required: true })}
               />

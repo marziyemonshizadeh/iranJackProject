@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 // import { Inter } from "next/font/google";
 // const inter = Inter({ subsets: ["latin"] });
+// import localFont from "@next/font/local";
+
+// const surt = localFont({
+//   src: "./fonts/IRANSans(FaNum)_Black.ttf",
+//   variable: "--font-iran-sans",
+// });
 
 export const metadata: Metadata = {
   title: "optigarment",
@@ -17,7 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" dir="rtl">
+    <html
+      lang="en"
+      dir="rtl"
+      // className={surt.variable}
+    >
       <body>{children}</body>
     </html>
   );

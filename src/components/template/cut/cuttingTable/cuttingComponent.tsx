@@ -3,7 +3,7 @@ import EmptyListWarning from "../emptyListWarning";
 import Table from "./table";
 
 function CuttingComponent() {
-  const isListEmpty = false;
+  const isListEmpty = true;
   return (
     <div className="border-2 border-[#E3E3E3] rounded-md p-3 w-full">
       <div className="border-b-2 border-[#E3E3E3] py-2 text-sm font-medium">
