@@ -5,7 +5,7 @@ function WarningMessage() {
     <div className="inline-flex items-center gap-2 font-semibold bg-[#FEF5DF] p-2 text-[#783412] text-xs rounded-lg border-r-4 border-r-[#FDB600] my-3">
       <Image
         alt="Warning"
-        src="/images/Warning.png"
+        src="/images/warning.svg"
         width={5}
         height={5}
         className="w-4 h-4"
@@ -16,7 +16,7 @@ function WarningMessage() {
       </span>
       <Image
         alt="DeleteWarn"
-        src="/images/DeleteWarn.png"
+        src="/images/DeleteWarn.svg"
         width={5}
         height={5}
         className="w-4 h-4"

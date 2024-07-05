@@ -6,7 +6,7 @@ import SemiCircleChart from "./charts/semiCircleChart/semiCircleChart";
 
 const PerformanceAtAGlance = () => {
   return (
-    <div className="lg:col-span-4 md:col-span-6 col-span-12 border bg-white border-slate-200 p-2 rounded border-r-[3px] border-r-[#2B5BB7] w-full lg:h-[430px] md:h-[330px]">
+    <div className="lg:col-span-4 md:col-span-6 col-span-12 border bg-white border-slate-200 p-2 rounded border-r-[3px] border-r-[#2B5BB7] w-full lg:h-[430px] md:h-[330px] h-[500px]">
       <header className="relative flex justify-between border-b-2 pb-2 border-[#EAEAEA]">
         <Link
           href="#"
@@ -43,9 +43,9 @@ const PerformanceAtAGlance = () => {
           </svg>
         </button>
       </header>
-      <>
+      <div className="p-2">
         <SemiCircleChart />
-        <div className="flex justify-center items-end gap-2 ">
+        <div className="flex justify-center gap-2 mt-14">
           <div className="inline-flex items-center gap-1 p-1 bg-[#F5F5F5] rounded-lg">
             <PiArrowCircleUpRightFill className="text-[#5C9B29] w-3 h-3" />
             <span className="text-[#566A7F]" style={{ fontSize: "10px" }}>
@@ -71,7 +71,7 @@ const PerformanceAtAGlance = () => {
             </span>
           </div>
         </div>
-      </>
+      </div>
     </div>
   );
 };

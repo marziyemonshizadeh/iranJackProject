@@ -53,3 +53,14 @@
 .chartBox {
   width: 200px;
 }
+/* .chart-container {
+  position: relative;
+  margin: auto;
+  height: 180vh;
+  width: 80vw;
+} */
+canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
