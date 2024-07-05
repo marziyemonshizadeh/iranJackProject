@@ -1,5 +1,5 @@
-import Sidebar from "../module/sidebar";
 import NavBar from "../module/navBar";
+import Sidebar from "../module/sidebar";
 
 interface Props {
   children: React.ReactNode;
@@ -7,10 +7,10 @@ interface Props {
 
 const HomePageLayout = ({ children }: Props) => {
   return (
-    <div className="bg-[#F8F9FE] text-black">
+    <div className="bg-[#F8F9FE] text-black overflow-hidden">
       <div className="flex">
         <Sidebar />
-        <section className="h-full flex-1">
+        <section className="flex-1">
           <NavBar />
           <main className="px-6 pb-36">{children}</main>
         </section>
