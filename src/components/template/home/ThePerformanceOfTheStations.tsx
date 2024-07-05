@@ -4,7 +4,7 @@ import ColumnChart from "./charts/columnChart/columnChart";
 
 export const ThePerformanceOfTheStations = () => {
   return (
-    <div className="lg:col-span-4 md:col-span-6 col-span-12 border bg-white border-slate-200 p-2 rounded border-r-[3px] border-r-[#2B5BB7] w-full h-[330px]">
+    <div className="lg:col-span-4 md:col-span-6 col-span-12 border bg-white border-slate-200 p-2 rounded border-r-[3px] border-r-[#2B5BB7] w-full lg:h-[430px] md:h-[330px]">
       <header className="relative flex justify-between pb-4 border-b-2 border-[#EAEAEA]">
         <Link
           href="#"

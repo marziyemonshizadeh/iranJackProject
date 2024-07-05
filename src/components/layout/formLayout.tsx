@@ -7,7 +7,7 @@ const FormLayout = ({ children }: FormLayoutProps) => {
     <div
       className="h-screen w-screen flex justify-center items-center bg-no-repeat bg-[#F5F5F5] bg-center bg-opacity-75"
       style={{
-        backgroundImage: 'url("/images/pattern.svg")',
+        backgroundImage: 'url("/images/formsImages/pattern.svg")',
       }}
     >
       {children}

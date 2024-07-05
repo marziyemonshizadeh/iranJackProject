@@ -41,8 +41,8 @@ export default function ForgetPasswordForm() {
             <p className="font-bold">بازگشت</p>
             <Link href="/">
               <Image
-                alt=""
-                src="/images/ArrowLeft.svg"
+                alt="ArrowLeft"
+                src="/images/formsImages/ArrowLeft.svg"
                 width={10}
                 height={10}
                 className="h-6 w-6 font-normal"
@@ -52,8 +52,8 @@ export default function ForgetPasswordForm() {
           <div className="relative mb-6">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none text-slate-500">
               <Image
-                alt=""
-                src="/images/Profile.svg"
+                alt="Profile"
+                src="/images/formsImages/Profile.svg"
                 width={10}
                 height={10}
                 className="w-6 h-6"

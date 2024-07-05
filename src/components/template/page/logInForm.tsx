@@ -37,8 +37,8 @@ export default function LoginForm() {
           <div className="relative text-[#888888]">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none text-[#888888]">
               <Image
-                alt=""
-                src="/images/Profile.svg"
+                alt="Profile"
+                src="/images/formsImages/Profile.svg"
                 width={10}
                 height={10}
                 className="w-6 h-6"
@@ -62,8 +62,8 @@ export default function LoginForm() {
           <div className="relative">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none text-[#888888]">
               <Image
-                alt=""
-                src="/images/Lock.svg"
+                alt="Lock"
+                src="/images/formsImages/Lock.svg"
                 width={10}
                 height={10}
                 className="w-6 h-6"

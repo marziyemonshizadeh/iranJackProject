@@ -34,7 +34,7 @@ export default function VerifyCodeForm() {
             <Link href="/forgetPassword">
               <Image
                 alt="ArrowLeft"
-                src="/images/ArrowLeft.svg"
+                src="/images/formsImages/ArrowLeft.svg"
                 width={10}
                 height={10}
                 className="h-6 w-6 font-normal"
@@ -49,7 +49,7 @@ export default function VerifyCodeForm() {
             <div className="flex items-center text-[#FF4040]">
               <Image
                 alt="Pen"
-                src="/images/Pen.svg"
+                src="/images/formsImages/Pen.svg"
                 width={10}
                 height={10}
                 className="w-4 h-4 mt-1"
@@ -111,7 +111,7 @@ export default function VerifyCodeForm() {
           <div className="flex items-center gap-2 text-[#2B5BB7]">
             <Image
               alt="timeLoadingBack"
-              src="/images/timeLoadingBack.svg"
+              src="/images/formsImages/timeLoadingBack.svg"
               width={10}
               height={10}
               className="w-6 h-6"

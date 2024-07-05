@@ -5,7 +5,7 @@ const Logo = () => {
     <div className="flex justify-center items-center gap-2">
       <Image
         alt="logo"
-        src="/images/Rectangle.svg"
+        src="/images/Logo.svg"
         width={20}
         height={20}
         className="w-[40px] h-[40.23px]"
