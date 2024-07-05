@@ -4,8 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const NavBar = () => {
   return (
-    <nav className="flex sticky top-0 z-10 justify-end items-center lg:gap-[121px] md:gap-2 gap-1 p-3 bg-[#FEFEFE] rounded-bl-3xl shadow-sm h-[64px]">
-      {/* searching */}
+    <nav className="flex sticky top-0 z-10 overflow-hidden lg:justify-end md:justify-between justify-center items-center lg:gap-[121px] md:gap-2 gap-1 p-3 bg-[#FEFEFE] rounded-bl-3xl shadow-sm h-[64px]">
       <div className="pt-2 relative text-gray-600 md:block hidden">
         <input
           className="border-2 border-gray-300 w-[350px] bg-white h-[40px] px-4 py-3 rounded-2xl text-sm focus:border-[#3E2DE1] outline-none"
@@ -16,20 +15,20 @@ const NavBar = () => {
         <button type="submit" className="absolute left-2 top-0 mt-4 mr-4">
           <Image
             alt="logo"
-            src="/images/search-loupe.svg"
+            src="/images/navBarIcons/search-loupe.svg"
             width={20}
             height={20}
             className="w-6 h-6"
           />
         </button>
       </div>
-      <div className="flex items-center gap-4 pe-5">
+      <div className="flex items-center md:gap-4 sm:gap-3 pe-5">
         <div className="flex items-center gap-2 w-[146px] h-[28px] text-xs font-normal rounded-full shadow-slate-100 bg-[#F5F5F5] text-[#444444] border border-[#EAEAEA]  shadow-inner px-1 py-2">
           <span>8:54:12</span>
           <span>1402/02/07</span>
           <Image
             alt="logo"
-            src="/images/Calendar.svg"
+            src="/images/navBarIcons/Calendar.svg"
             width={20}
             height={20}
             className="w-5 h-5"
@@ -37,11 +36,11 @@ const NavBar = () => {
         </div>
         <button
           type="button"
-          className="relative inline-flex items-center rounded-full  p-2  shadow-md  border border-[#F5F5F5] text-sm font-medium text-center text-slate-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="relative inline-flex items-center rounded-full md:p-2 sm:p-[5px] shadow-md  border border-[#F5F5F5] text-sm font-medium text-center text-slate-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           <Image
             alt="bell-notifications"
-            src="/images/bell-notifications.svg"
+            src="/images/navBarIcons/bell-notifications.svg"
             width={20}
             height={20}
             className="w-6 h-6"
@@ -59,7 +58,7 @@ const NavBar = () => {
         <div className="rounded-full shadow-md border border-[#F5F5F5] p-2">
           <Image
             alt="logo"
-            src="/images/Power.svg"
+            src="/images/navBarIcons/Power.svg"
             width={20}
             height={20}
             className="w-6 h-6"
