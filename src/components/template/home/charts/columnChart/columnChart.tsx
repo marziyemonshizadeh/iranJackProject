@@ -11,7 +11,7 @@ function ColumnChart() {
       options={ColumnChartOptions}
       series={ColumnChartOptions.series}
       height={340}
-      width={420}
+      width={360}
       style={{ paddingBottom: "3px" }}
     />
   );

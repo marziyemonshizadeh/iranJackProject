@@ -12,7 +12,7 @@ import Link from "next/link";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 export default function VerifyCodeForm() {
-  const IsTheEnteredCodeWrong = false;
+  const IsTheEnteredCodeWrong = true;
   const {
     register,
     reset,
@@ -78,7 +78,7 @@ export default function VerifyCodeForm() {
             } `}
           >
             <input
-              className={`w-12 h-12 text-center border rounded-md shadow-sm outline-none focus:border-[#3E2DE1] focus:ring-[#3E2DE1] ${
+              className={`w-12 h-12 text-center border rounded-md shadow-sm outline-none focus:border-primary focus:ring-primary ${
                 IsTheEnteredCodeWrong && "border-[#FF4040]"
               }`}
               type="text"
@@ -89,7 +89,7 @@ export default function VerifyCodeForm() {
               {...register("charOne", { required: true })}
             />
             <input
-              className={`w-12 h-12 text-center border rounded-md shadow-sm outline-none focus:border-[#3E2DE1] focus:ring-[#3E2DE1] ${
+              className={`w-12 h-12 text-center border rounded-md shadow-sm outline-none focus:border-primary focus:ring-primary ${
                 IsTheEnteredCodeWrong && "border-[#FF4040]"
               }`}
               type="text"
@@ -100,7 +100,7 @@ export default function VerifyCodeForm() {
               {...register("charTwo", { required: true })}
             />
             <input
-              className={`w-12 h-12 text-center border rounded-md shadow-sm outline-none focus:border-[#3E2DE1] focus:ring-[#3E2DE1] ${
+              className={`w-12 h-12 text-center border rounded-md shadow-sm outline-none focus:border-primary focus:ring-primary ${
                 IsTheEnteredCodeWrong && "border-[#FF4040]"
               }`}
               type="text"
@@ -111,7 +111,7 @@ export default function VerifyCodeForm() {
               {...register("charThree", { required: true })}
             />
             <input
-              className={`w-12 h-12 text-center border rounded-md shadow-sm outline-none focus:border-[#3E2DE1] focus:ring-[#3E2DE1] ${
+              className={`w-12 h-12 text-center border rounded-md shadow-sm outline-none focus:border-primary focus:ring-primary ${
                 IsTheEnteredCodeWrong && "border-[#FF4040]"
               }`}
               type="text"

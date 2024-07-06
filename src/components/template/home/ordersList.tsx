@@ -4,7 +4,7 @@ import OrdersTable from "./ordersTable";
 
 export const OrdersList = () => {
   return (
-    <div className="lg:col-span-8 md:col-span-6 col-span-12 border bg-white border-slate-200 rounded border-r-[3px] border-r-[#3E2DE1] lg:h-[430px] md:h-[330px]">
+    <div className="lg:col-span-8 md:col-span-6 col-span-12 border bg-white border-slate-200 rounded border-r-[3px] border-r-primary lg:h-[430px] md:h-[330px]">
       <header className="relative flex justify-between pb-4 p-2 ">
         <Link
           href="#"

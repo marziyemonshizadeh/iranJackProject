@@ -8,7 +8,7 @@ const NavBar = () => {
     <nav className="flex w-full overflow-hidden lg:justify-end md:justify-between justify-center items-center lg:gap-[121px] md:gap-2 gap-1 p-3 bg-[#FEFEFE] rounded-bl-3xl shadow-sm h-[64px]">
       <div className="pt-2 relative text-gray-600 md:block hidden">
         <input
-          className="border-2 border-gray-300 w-[350px] bg-white h-[40px] px-4 py-3 rounded-2xl text-sm focus:border-[#3E2DE1] outline-none"
+          className="border-2 border-gray-300 w-[350px] bg-white h-[40px] px-4 py-3 rounded-2xl text-sm focus:border-primary outline-none"
           type="search"
           name="search"
           placeholder="جستجو"

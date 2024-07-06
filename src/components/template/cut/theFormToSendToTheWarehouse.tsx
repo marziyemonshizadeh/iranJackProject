@@ -37,13 +37,13 @@ function TheFormToSendToTheWarehouse() {
               <input
                 type="text"
                 id="cutTitle"
-                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg outline-none appearance-none focus:ring-1 focus:border-[#3E2DE1] selection:border-[#3E2DE1] peer"
+                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg outline-none appearance-none focus:ring-1 focus:border-primary selection:border-primary peer"
                 placeholder=" "
                 {...register("cutTitle", { required: true })}
               />
               <label
                 htmlFor="cutTitle"
-                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-[#3E2DE1] peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-primary peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
                 عنوان برش
               </label>
@@ -61,13 +61,13 @@ function TheFormToSendToTheWarehouse() {
               <input
                 type="text"
                 id="CuttingCode"
-                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg border-3 border-indigo-700 outline-none appearance-none focus:ring-1 focus:border-[#3E2DE1] peer"
+                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg border-3 border-primary outline-none appearance-none focus:ring-1 focus:border-primary peer"
                 placeholder=" "
                 {...register("CuttingCode", { required: true })}
               />
               <label
                 htmlFor="CuttingCode"
-                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-[#3E2DE1] peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-primary peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
                 کد برش
               </label>
@@ -85,13 +85,13 @@ function TheFormToSendToTheWarehouse() {
               <input
                 type="text"
                 id="projectCode"
-                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg border-3 border-indigo-700 outline-none appearance-none focus:ring-1 focus:border-[#3E2DE1] peer"
+                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg border-3 border-primary outline-none appearance-none focus:ring-1 focus:border-primary peer"
                 placeholder=" "
                 {...register("projectCode", { required: true })}
               />
               <label
                 htmlFor="projectCode"
-                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-[#3E2DE1] peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-primary peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
                 کد پروژه
               </label>
@@ -109,13 +109,13 @@ function TheFormToSendToTheWarehouse() {
               <input
                 type="text"
                 id="color"
-                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg border-3 border-indigo-700 outline-none appearance-none focus:ring-1 focus:border-[#3E2DE1] peer"
+                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg border-3 border-primary outline-none appearance-none focus:ring-1 focus:border-primary peer"
                 placeholder=" "
                 {...register("color", { required: true })}
               />
               <label
                 htmlFor="color"
-                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-[#3E2DE1] peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-primary peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
                 رنگ
               </label>
@@ -133,13 +133,13 @@ function TheFormToSendToTheWarehouse() {
               <input
                 type="text"
                 id="colorCode"
-                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg border-3 border-indigo-700 outline-none appearance-none focus:ring-1 focus:border-[#3E2DE1] peer"
+                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg border-3 border-primary outline-none appearance-none focus:ring-1 focus:border-primary peer"
                 placeholder=" "
                 {...register("colorCode", { required: true })}
               />
               <label
                 htmlFor="colorCode"
-                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-[#3E2DE1] peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-primary peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
                 کد رنگ
               </label>
@@ -157,13 +157,13 @@ function TheFormToSendToTheWarehouse() {
               <input
                 type="text"
                 id="qualityCode"
-                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg border-3 border-indigo-700 outline-none appearance-none focus:ring-1 focus:border-[#3E2DE1] peer"
+                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg border-3 border-primary outline-none appearance-none focus:ring-1 focus:border-primary peer"
                 placeholder=" "
                 {...register("qualityCode", { required: true })}
               />
               <label
                 htmlFor="qualityCode"
-                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-[#3E2DE1] peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-primary peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
                 کد کالیته
               </label>
@@ -181,13 +181,13 @@ function TheFormToSendToTheWarehouse() {
               <input
                 type="text"
                 id="numberOfHeights"
-                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg border-3 border-indigo-700 outline-none appearance-none focus:ring-1 focus:border-[#3E2DE1] peer"
+                className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-[#F5F5F5] rounded-lg border-3 border-primary outline-none appearance-none focus:ring-1 focus:border-primary peer"
                 placeholder=" "
                 {...register("numberOfHeights", { required: true })}
               />
               <label
                 htmlFor="numberOfHeights"
-                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-[#3E2DE1] peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                className="absolute text-sm text-gray-500 border-3 border-black dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-5 origin-[0] bg-[#F5F5F5] px-2 peer-focus:px-2 peer-focus:text-primary peer-focus:bg-slate-50  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
               >
                 تعداد قد
               </label>
@@ -204,13 +204,13 @@ function TheFormToSendToTheWarehouse() {
         <div className="flex justify-end gap-3 my-6">
           <button
             type="submit"
-            className="bg-transparent w-[118px] h-[32px] text-sm font-medium float-end text-[#333333] p-1 border-2 border-[#EEEEEE] hover:border-[#3E2DE1] focus:border-[#3E2DE1] hover:text-[#3E2DE1] focus:text-[#3E2DE1] focus:bg-[#EEECFF] rounded-lg"
+            className="bg-transparent w-[118px] h-[32px] text-sm font-medium float-end text-[#333333] p-1 border-2 border-[#EEEEEE] hover:border-primary focus:border-primary hover:text-primary focus:text-primary focus:bg-[#EEECFF] rounded-lg"
           >
             ارسال به انبار
           </button>
           <button
             type="submit"
-            className="bg-[#3E2DE1] hover:bg-[#1B0E9D] text-slate-50 w-[118px] h-[32px] text-sm font-medium float-end p-1  rounded-lg"
+            className="bg-primary hover:bg-[#1B0E9D] text-slate-50 w-[118px] h-[32px] text-sm font-medium float-end p-1  rounded-lg"
           >
             ذخیره
           </button>

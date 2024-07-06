@@ -16,7 +16,7 @@ function CuttingComponent() {
         </div>
       </div>
 
-      <button className="bg-transparent inline-flex justify-center mt-2 items-center float-end text-[#333333] font-normal text-base py-1 px-4 border-2 border-[#EEEEEE] hover:border-[#3E2DE1] focus:border-[#3E2DE1] hover:text-[#3E2DE1] focus:text-[#3E2DE1] focus:bg-[#EEECFF] rounded">
+      <button className="bg-transparent inline-flex justify-center mt-2 items-center float-end text-[#333333] font-normal text-base py-1 px-4 border-2 border-[#EEEEEE] hover:border-primary focus:border-primary hover:text-primary focus:text-primary focus:bg-[#EEECFF] rounded">
         <FiEdit className="w-4 h-4 me-2" />
         <span>ویرایش</span>
       </button>

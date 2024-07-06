@@ -45,28 +45,28 @@ const PerformanceAtAGlance = () => {
       </header>
       <div className="p-2">
         <SemiCircleChart />
-        <div className="flex justify-center gap-2 mt-14">
+        <div className="flex justify-center gap-1 mt-14">
           <div className="inline-flex items-center gap-1 p-1 bg-[#F5F5F5] rounded-lg">
-            <PiArrowCircleUpRightFill className="text-[#5C9B29] w-3 h-3" />
-            <span className="text-[#566A7F]" style={{ fontSize: "10px" }}>
+            <PiArrowCircleUpRightFill className="text-[#5C9B29] w-[12px] h-[12px]" />
+            <span className="text-[#566A7F]" style={{ fontSize: "8px" }}>
               عملکرد عالی
             </span>
           </div>
-          <div className="inline-flex items-center p-1 bg-[#F5F5F5] rounded-lg">
-            <PiArrowCircleUpRightFill className="text-[#FDB600] w-3 h-3" />
-            <span className="text-[#566A7F]" style={{ fontSize: "10px" }}>
+          <div className="inline-flex items-center gap-1 p-1 bg-[#F5F5F5] rounded-lg">
+            <PiArrowCircleUpRightFill className="text-[#FDB600] w-[12px] h-[12px]" />
+            <span className="text-[#566A7F]" style={{ fontSize: "8px" }}>
               عملکرد متوسط
             </span>
           </div>
-          <div className="inline-flex items-center p-1 bg-[#F5F5F5] rounded-lg">
-            <BsArrowDownLeftCircleFill className="text-[#FF6A6A] w-3 h-3" />
-            <span className="text-[#566A7F]" style={{ fontSize: "10px" }}>
+          <div className="inline-flex items-center gap-1 p-1 bg-[#F5F5F5] rounded-lg">
+            <BsArrowDownLeftCircleFill className="text-[#FF6A6A] w-[12px] h-[12px]" />
+            <span className="text-[#566A7F]" style={{ fontSize: "8px" }}>
               عملکرد ضعیف
             </span>
           </div>
-          <div className="inline-flex items-center p-1 bg-[#F5F5F5] rounded-lg">
-            <BsArrowDownLeftCircleFill className="text-[#FF4040] w-3 h-3" />
-            <span className="text-[#566A7F]" style={{ fontSize: "10px" }}>
+          <div className="inline-flex items-center gap-1 p-1 bg-[#F5F5F5] rounded-lg">
+            <BsArrowDownLeftCircleFill className="text-[#FF4040] w-[12px] h-[12px]" />
+            <span className="text-[#566A7F]" style={{ fontSize: "8px" }}>
               عملکرد ضعیف
             </span>
           </div>

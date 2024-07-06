@@ -47,7 +47,7 @@ export default function LoginForm() {
             <input
               type="text"
               id="input-group-1"
-              className="bg-[#FEFEFE] text-[16px] font-normal border max-w-[324px] h-[48px] border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 py-2 px-3 outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-[#FEFEFE] text-[16px] font-normal border max-w-[324px] h-[48px] border-gray-300 text-gray-900  rounded-lg focus:ring-primary focus:border-primary block w-full ps-10 py-2 px-3 outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
               placeholder="شماره موبایل یا ایمیل"
               {...register("identifier", { required: true })}
             />
@@ -72,7 +72,7 @@ export default function LoginForm() {
             <input
               type="text"
               id="input-group-1"
-              className="bg-[#FEFEFE] text-[16px] font-normal border max-w-[324px] h-[48px] border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 py-2 px-3 outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-[#FEFEFE] text-[16px] font-normal border max-w-[324px] h-[48px] border-gray-300 text-gray-900  rounded-lg focus:ring-primary focus:border-primary block w-full ps-10 py-2 px-3 outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
               placeholder="رمز عبور"
               {...register("password", { required: true })}
             />
@@ -90,7 +90,7 @@ export default function LoginForm() {
                   <input
                     id="horizontal-list-svelte"
                     type="checkbox"
-                    className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-indigo-700 checked:bg-indigo-700 checked:before:bg-indigo-700 hover:border-indigo-700 hover:before:opacity-0"
+                    className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:border-primary hover:before:opacity-0"
                     {...register("remember")}
                   />
                   <span className="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
@@ -123,7 +123,7 @@ export default function LoginForm() {
               <div className="flex items-center h-5">
                 <Link
                   href="/forgetPassword"
-                  className="text-sm font-medium text-indigo-700 dark:text-primary-500"
+                  className="text-sm font-medium text-primary dark:text-primary-500"
                 >
                   فراموشی رمز عبور
                 </Link>

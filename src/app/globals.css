@@ -41,10 +41,10 @@
 
 @layer utilities {
   .button {
-    @apply w-full h-14 text-slate-50 bg-[#3E2DE1] p-3 rounded-xl font-bold;
+    @apply w-full h-14 text-slate-50 bg-primary p-3 rounded-xl font-bold;
   }
   .errorMsgStyle {
-    @apply text-indigo-700 font-bold text-xs;
+    @apply text-primary font-bold text-xs;
   }
 }
 .apexcharts-xaxis-label {
@@ -53,12 +53,6 @@
 .chartBox {
   width: 200px;
 }
-/* .chart-container {
-  position: relative;
-  margin: auto;
-  height: 180vh;
-  width: 80vw;
-} */
 canvas {
   display: flex;
   justify-content: center;

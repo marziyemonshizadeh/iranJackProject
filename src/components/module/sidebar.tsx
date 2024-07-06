@@ -13,7 +13,7 @@ const Sidebar = () => {
 
   return (
     <section
-      className={`bg-[#FEFEFE] text-[#3E2DE1] duration-200 transition-all sticky top-0 z-20 overflow-hidden ${
+      className={`bg-[#FEFEFE] text-primary duration-200 transition-all sticky top-0 z-20 overflow-hidden ${
         open ? "w-72" : "w-20"
       }`}
     >
@@ -24,7 +24,7 @@ const Sidebar = () => {
           }`}
           onClick={() => setOpen(!open)}
         >
-          <div className="bg-[#3E2DE1] text-slate-50 w-7 h-7 p-1 rounded-full">
+          <div className="bg-primary text-slate-50 w-7 h-7 p-1 rounded-full">
             <IoIosArrowForward
               className={`w-5 h-5 duration-300 ${!open && "rotate-180 "}`}
             />
@@ -57,7 +57,7 @@ const Sidebar = () => {
               <li
                 key={item.id}
                 className={`${
-                  router == `/${item.rootName}` && "border-e-2 border-[#3E2DE1]"
+                  router == `/${item.rootName}` && "border-e-2 border-primary"
                 } `}
               >
                 <Link
@@ -68,7 +68,7 @@ const Sidebar = () => {
                   } 
               ${
                 router == `/${item.rootName}`
-                  ? "bg-[#EEECFF] text-[#3E2DE1] rounded-md"
+                  ? "bg-[#EEECFF] text-primary rounded-md"
                   : "text-[#555555]"
               }`}
                 >

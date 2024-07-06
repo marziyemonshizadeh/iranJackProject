@@ -24,7 +24,7 @@ const FakeSidebar = () => {
 
   return (
     <section
-      className={`bg-[#FEFEFE] text-[#3E2DE1] h-screen relative duration-300 ${
+      className={`bg-[#FEFEFE] text-primary h-screen relative duration-300 ${
         open ? "w-72" : "w-20"
       }`}
     >
@@ -34,7 +34,7 @@ const FakeSidebar = () => {
         }`}
         onClick={() => setOpen(!open)}
       >
-        <div className="bg-[#3E2DE1] text-slate-50 w-7 h-7 p-1 rounded-full">
+        <div className="bg-primary text-slate-50 w-7 h-7 p-1 rounded-full">
           <IoIosArrowForward
             className={`w-5 h-5 duration-300 ${!open && "rotate-180 "}`}
           />
@@ -60,11 +60,11 @@ const FakeSidebar = () => {
         </li>
 
         {/* if go project page */}
-        <li className="border-e-2 border-[#3E2DE1] px-3">
+        <li className="border-e-2 border-primary px-3">
           <div
-            className={`flex rounded-md cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center gap-x-4 mt-2 ${
+            className={`flex rounded-md cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center gap-x-4 mt-2 ${
               !open && " bg-[#F5F5F5]"
-            } border-2 border-[#EAEAEA] bg-[#EEECFF] text-[#3E2DE1] rounded-md p-1`}
+            } border-2 border-[#EAEAEA] bg-[#EEECFF] text-primary rounded-md p-1`}
           >
             {/* <Image
               alt="nn"
@@ -81,7 +81,7 @@ const FakeSidebar = () => {
         </li>
 
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -92,7 +92,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -103,7 +103,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -114,7 +114,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -125,7 +125,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -136,7 +136,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -147,7 +147,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -158,7 +158,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -169,7 +169,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -180,7 +180,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -191,7 +191,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -202,7 +202,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -213,7 +213,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -224,7 +224,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -235,7 +235,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >
@@ -246,7 +246,7 @@ const FakeSidebar = () => {
           </span>
         </li>
         <li
-          className={`flex rounded-md  cursor-pointer text-[#3E2DE1] font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
+          className={`flex rounded-md  cursor-pointer text-primary font-bold hover:bg-light-white text-sm items-center  gap-x-4 mt-2 ${
             !open ? "border-2 border-[#EAEAEA] bg-[#F5F5F5] w-9 h-9" : "px-3"
           }`}
         >

@@ -33,7 +33,7 @@ function SubTab() {
         <Link
           href="#"
           aria-current="page"
-          className="inline-flex items-center gap-1 p-4 text-[#3E2DE1] bg-white rounded-t-lg active dark:bg-gray-800 dark:text-blue-500"
+          className="inline-flex items-center gap-1 p-4 text-primary bg-white rounded-t-lg active dark:bg-gray-800 dark:text-primary"
         >
           <LuPlusCircle className="w-5 h-5" />
           <span>میز برش</span>

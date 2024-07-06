@@ -23,7 +23,7 @@ function Tab() {
         <li className="me-2">
           <Link
             href="#"
-            className="inline-flex items-center gap-2 p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500"
+            className="inline-flex items-center gap-2 p-4 text-primary border-b-2 border-primary rounded-t-lg active dark:text-primary dark:border-primary"
             aria-current="page"
           >
             برش
