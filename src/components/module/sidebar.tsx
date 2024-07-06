@@ -48,7 +48,11 @@ const Sidebar = () => {
               height={20}
               className="w-[30px] h-[30.23px]"
             />
-            <p className={`font-semibold text-xl ${!open && "hidden"}`}>
+            <p
+              className={`font-semibold text-xl text-black ${
+                !open && "hidden"
+              }`}
+            >
               اُپتی گارمِنت
             </p>
           </li>
