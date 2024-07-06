@@ -10,8 +10,9 @@ function ColumnChart() {
       type="bar"
       options={ColumnChartOptions}
       series={ColumnChartOptions.series}
+      minHeight={340}
       height={340}
-      width={360}
+      minWidth={360}
       style={{ paddingBottom: "3px" }}
     />
   );
