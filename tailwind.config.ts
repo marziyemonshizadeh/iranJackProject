@@ -17,6 +17,9 @@ const config: Config = {
       colors: {
         primary: "#3E2DE1",
       },
+      fontFamily: {
+        sans: ["var(--font-IRANSans)"],
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")],
