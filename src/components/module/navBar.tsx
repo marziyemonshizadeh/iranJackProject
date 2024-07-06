@@ -23,7 +23,7 @@ const NavBar = () => {
           />
         </button>
       </div>
-      <div className="flex items-center md:gap-4 sm:gap-3 pe-5">
+      <div className="flex items-center justify-center md:gap-4 sm:gap-3 pe-5">
         <div className="flex items-center gap-2 w-[146px] h-[28px] text-xs font-normal rounded-full shadow-slate-100 bg-[#F5F5F5] text-[#444444] border border-[#EAEAEA]  shadow-inner px-1 py-2">
           <span>8:54:12</span>
           <span>1402/02/07</span>
