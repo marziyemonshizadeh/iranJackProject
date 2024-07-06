@@ -10,7 +10,12 @@ function CuttingComponent() {
         میز برش
       </div>
 
-      <div className="h-[220px] overflow-y-scroll scrollbar-thin scrollbar-thumb-[#E3E3E3] scrollbar-track-transparent">
+      <div
+        className={`h-[220px] ${
+          isListEmpty &&
+          "overflow-y-scroll scrollbar-thin scrollbar-thumb-[#E3E3E3] scrollbar-track-transparent"
+        }`}
+      >
         <div className="overflow-hidden my-3 ">
           {isListEmpty ? <EmptyListWarning /> : <Table />}
         </div>
