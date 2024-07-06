@@ -2,7 +2,7 @@ import EmptyListWarning from "../emptyListWarning";
 import SizeTable from "./table";
 
 function TableOfSizes() {
-  const isListEmpty = false;
+  const isListEmpty = true;
 
   return (
     <div className="border-2 border-[#E3E3E3] rounded-md p-3 w-full">

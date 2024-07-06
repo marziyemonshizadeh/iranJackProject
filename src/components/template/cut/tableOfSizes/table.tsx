@@ -98,8 +98,8 @@ function SizeTable() {
             </tr>
           );
         })}
-        <tr className="border-b-none font-medium bg-[#F5F5F5] border-[#E3E3E3] dark:border-white/10">
-          <td className="p-2 whitespace-nowrap w-9 text-[#2B5BB7] text-base font-medium border-e border-[#E3E3E3] dark:border-white/10">
+        <tr className="border-b-none font-bold bg-[#F5F5F5] border-[#E3E3E3] dark:border-white/10">
+          <td className="p-2 whitespace-nowrap w-9 text-[#2B5BB7] text-base border-e border-[#E3E3E3] dark:border-white/10">
             جمع کل
           </td>
           <td className="whitespace-nowrap border-e border-[#E3E3E3] dark:border-white/10">

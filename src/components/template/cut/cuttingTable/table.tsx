@@ -58,16 +58,14 @@ function CuttingTable() {
             );
           })}
 
-          <tr className="bg-[#F5F5F5] border-2 border-t-0 border-[#E3E3E3] border-b dark:border-white/10">
+          <tr className="bg-[#F5F5F5] border-2 border-t-0 border-[#E3E3E3] border-b font-bold dark:border-white/10">
             <td className="whitespace-nowrap px-3 py-[9px] dark:border-white/10"></td>
-            <td className="whitespace-nowrap px-3 py-[9px] text-[#2B5BB7] text-base font-medium dark:border-white/10">
+            <td className="whitespace-nowrap px-3 py-[9px] text-[#2B5BB7] text-base  dark:border-white/10">
               جمع کل
             </td>
             <td className="whitespace-nowrap px-3 py-[9px] dark:border-white/10"></td>
             <td className="whitespace-nowrap border-e border-[#E3E3E3] px-3 py-[9px] dark:border-white/10"></td>
-            <td className="whitespace-nowrap px-3 text-base font-medium py-[9px]">
-              4
-            </td>
+            <td className="whitespace-nowrap px-3 text-base  py-[9px]">4</td>
           </tr>
         </tbody>
       </table>
