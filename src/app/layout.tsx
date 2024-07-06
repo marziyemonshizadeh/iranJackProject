@@ -6,32 +6,25 @@ const poppins = localFont({
   src: [
     {
       path: "../../public/fonts/IRANSans(FaNum)_Black.ttf",
-      weight: "400",
     },
     {
       path: "../../public/fonts/IRANSans(FaNum)_Bold.ttf",
-      weight: "700",
     },
     {
       path: "../../public/fonts/IRANSans(FaNum)_Light.ttf",
-      // weight: "700",
     },
     {
       path: "../../public/fonts/IRANSans(FaNum)_Medium.ttf",
-      // weight: "700",
     },
     {
       path: "../../public/fonts/IRANSans(FaNum)_UltraLight.ttf",
-      // weight: "700",
     },
     {
       path: "../../public/fonts/IRANSans(FaNum).ttf",
-      // weight: "700",
     },
   ],
   variable: "--font-IRANSans",
 });
-// console.log("poppins", poppins);
 
 export const metadata: Metadata = {
   title: "optigarment",
@@ -47,12 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      dir="rtl"
-      className={`${poppins.variable} font-sans`}
-      // className={surt.variable}
-    >
+    <html lang="en" dir="rtl" className={`${poppins.variable} font-sans`}>
       <body className="font-sans">{children}</body>
     </html>
   );
