@@ -67,10 +67,24 @@ export const ColumnChartOptions: any = {
   },
 
   colors: ["#80BCFF"],
-  responsive: [
-    {
-      breakpoint: undefined,
-      options: {},
-    },
-  ],
+  // responsive: [
+  //   {
+  //     breakpoint: 1000,
+  //     options: {
+  //       Chart: {
+  //         height: 340,
+  //         width: 360,
+  //       },
+  //     },
+  //   },
+  //   {
+  //     breakpoint: 600,
+  //     options: {
+  //       Chart: {
+  //         height: 300,
+  //         width: 300,
+  //       },
+  //     },
+  //   },
+  // ],
 };
