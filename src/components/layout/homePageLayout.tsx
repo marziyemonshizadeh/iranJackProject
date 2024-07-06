@@ -10,7 +10,7 @@ const HomePageLayout = ({ children }: Props) => {
     <div className="bg-[#F8F9FE] text-black overflow-hidden">
       <div className="flex">
         <Sidebar />
-        <section className="flex-1">
+        <section className="flex-1 min-h-screen">
           <NavBar />
           <main className="px-6 pb-36">{children}</main>
         </section>
