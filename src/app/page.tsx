@@ -1,9 +1,7 @@
-import LoginForm from "@/components/template/page/logInForm";
+import { redirect } from "next/navigation";
 
 export default function Page() {
-  return (
-    <>
-      <LoginForm />
-    </>
-  );
+ 
+    redirect("/logIn");
+  
 }

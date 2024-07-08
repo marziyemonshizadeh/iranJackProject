@@ -1,4 +1,3 @@
-import HomePageLayout from "@/components/layout/homePageLayout";
 import CuttingComponent from "@/components/template/cut/cuttingTable/cuttingComponent";
 import SubTab from "@/components/template/cut/subTab";
 import Tab from "@/components/template/cut/tab";
@@ -8,8 +7,7 @@ import { LuDownload } from "react-icons/lu";
 
 const Cut = () => {
   return (
-    <HomePageLayout>
-      <div className="col-span-12 mt-4 ">
+      <div className="col-span-12 mt-4">
         <Tab />
         <SubTab />
         <div className="bg-white p-3  border-2 border-b-0 border-t-0 border-[#EEEEEE]">
@@ -26,7 +24,6 @@ const Cut = () => {
           </button>
         </div>
       </div>
-    </HomePageLayout>
   );
 };
 

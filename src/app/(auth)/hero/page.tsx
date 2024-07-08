@@ -1,9 +1,7 @@
-import FormLayout from "@/components/layout/formLayout";
 import Image from "next/image";
 
 const Hero = () => {
   return (
-    <FormLayout>
       <div className="flex flex-col justify-center items-center gap-4 w-[394px] h-[239px] mx-auto p-8 border border-slate-100 bg-center rounded-[12px] bg-white shadow-sm shadow-[#E8E8E8]">
         <Image
           alt="heroIcon"
@@ -26,7 +24,6 @@ const Hero = () => {
           </p>
         </div>
       </div>
-    </FormLayout>
   );
 };
 
