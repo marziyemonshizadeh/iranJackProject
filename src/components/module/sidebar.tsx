@@ -1,6 +1,7 @@
 "use client";
 
 import { SideBarItems } from "@/data/sidebarItems";
+import clsx from 'clsx';
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -13,33 +14,33 @@ const Sidebar = () => {
 
   return (
     <section
-      className={`bg-[#FEFEFE] text-primary duration-200 transition-all sticky top-0 z-20 overflow-hidden ${
-        open ? "w-72" : "w-20"
-      }`}
+      className={clsx('bg-[#FEFEFE] text-primary duration-200 transition-all sticky top-0 z-20 overflow-hidden', { 'w-72':open, 'w-20':!open  })
+    }
     >
-      <div className={`fixed ${open ? "w-72" : "w-20"}`}>
+      <div className={clsx('fixed' ,{ 'w-72':open, 'w-20':!open  })}>
         <div
-          className={`bg-[#F8F9FE] p-1 w-10 h-10 rounded-full absolute cursor-pointer top-10 ${
-            open ? "right-[277px]" : "right-[72px] overflow-y-hidden"
-          }`}
+          className={
+            clsx('bg-[#F8F9FE] p-1 w-10 h-10 rounded-full absolute cursor-pointer top-10' ,{ 'right-[277px]':open, 'right-[72px] overflow-y-hidden':!open  })
+        }
           onClick={() => setOpen(!open)}
         >
           <div className="bg-primary text-slate-50 w-7 h-7 p-1 rounded-full">
             <IoIosArrowForward
-              className={`w-5 h-5 duration-300 ${!open && "rotate-180 "}`}
+              className={
+                clsx('w-5 h-5 duration-300',{'rotate-180 ':!open})
+              }
             />
           </div>
         </div>
 
         <ul
-          className={`flex flex-col justify-between h-screen ${
-            open ? "lg:gap-[16px] md:gap-[6px]" : "lg:gap-[12px] md:gap-[6px]"
-          }`}
+          className={
+            clsx('flex flex-col justify-between h-screen' ,{ 'lg:gap-[16px] md:gap-[6px]':open, 'lg:gap-[12px] md:gap-[6px]':!open  })
+            }
         >
           <li
-            className={`flex justify-start items-center gap-2 py-2 ${
-              open ? "m-2 ms-4" : "my-2 mx-auto"
-            }`}
+            className={
+              clsx('flex justify-start items-center gap-2 py-2' ,{ 'm-2 ms-4':open, 'my-2 mx-auto':!open  })}
           >
             <Image
               alt="logo"
@@ -49,9 +50,8 @@ const Sidebar = () => {
               className="w-[30px] h-[30.23px]"
             />
             <p
-              className={`font-semibold text-xl text-black ${
-                !open && "hidden"
-              }`}
+              className={
+                clsx('fixfont-semibold text-xl text-black' ,{ 'hidden':!open  })}
             >
               اُپتی گارمِنت
             </p>
@@ -60,35 +60,36 @@ const Sidebar = () => {
             return (
               <li
                 key={item.id}
-                className={`${
-                  router == `/${item.rootName}` && "border-e-2 border-primary"
-                } `}
+                className={
+                  clsx('' ,{ 'border-e-2 border-primary':router == `/${item.rootName}` })}
               >
                 <Link
                   href={`/${item.rootName}`}
-                  className={`flex rounded-md cursor-pointer lg:p-1 p-[2px] mx-2 font-bold hover:bg-light-white text-sm items-center gap-x-4 ${
-                    !open &&
-                    "bg-[#F5F5F5] lg:w-9 md:w-7 md:h-7 lg:h-9 w-6 h-6  border-2 mx-auto border-[#EAEAEA]"
-                  } 
-              ${
-                router == `/${item.rootName}`
-                  ? "bg-[#EEECFF] text-primary rounded-md"
-                  : "text-[#555555]"
-              }`}
+                  className={ clsx('flex rounded-md cursor-pointer lg:p-1 p-[2px] mx-2 font-bold hover:bg-light-white text-sm items-center gap-x-4' 
+                    ,{ 'bg-[#F5F5F5] lg:w-9 md:w-7 md:h-7 lg:h-9 w-6 h-6  border-2 mx-auto border-[#EAEAEA]': !open ,
+                      'bg-[#EEECFF] text-primary rounded-md':router == `/${item.rootName}`,
+                        'text-[#555555]':router !== `/${item.rootName}` })
+                      }
                 >
-                  <Image
+                 <Image
                     alt="logo"
-                    src={`/images/sideBarIcons/${
-                      router == `/${item.rootName}` || !open
+                    src={
+                        `/images/sideBarIcons/${
+                         router == `/${item.rootName}` || !open
                         ? `/${item.iconSelectName}`
                         : `/${item.iconName}`
-                    }`}
+                    }` 
+                  }
                     width={20}
                     height={20}
-                    className={`${open ? "w-6 h-6" : "w-[30px] h-[30.23px]"}`}
+                    className={
+                      clsx("",{"w-6 h-6" :open , "w-[30px] h-[30.23px]":!open})
+                    }
                   />
                   <span
-                    className={`${!open && "hidden"} origin-left duration-200`}
+                    className={
+                      clsx("origin-left duration-200",{"hidden":!open})
+                    }
                   >
                     {item.name}
                   </span>
